@@ -12,7 +12,7 @@ export default class App extends Component {
                 value: 50,
               },
               color: {
-                value: "#ccc",
+                value: "#262C43",
               },
               shape: {
                 type: "circle",
@@ -25,6 +25,7 @@ export default class App extends Component {
               },
               lineLinked: {
                 distance: 150,
+                color: '#262C43',
               },
               move: {
                 speed: 4,
