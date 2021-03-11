@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import Particles from "react-particles-js"
-export default class App extends Component {
+import { Route, Switch } from "react-router-dom"
+import Header from "./Components/Header/Header"
+
+class App extends Component {
   render() {
     return (
       <div>
@@ -32,7 +35,18 @@ export default class App extends Component {
             },
           }}
         />
-      </div>
+    
+        <Header />
+    
+        <Switch>
+          {/* <Route exact path="/" component={() => <Homepage/>} /> */}
+       
+        </Switch>
+
+    </div>
+      
     )
   }
 }
+
+export default App
