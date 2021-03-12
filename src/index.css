@@ -9,6 +9,40 @@ body {
   margin: 0;
   color: #ffffff;
 }
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-track {
+  background: #010415;
+}
+::-webkit-scrollbar-thumb {
+  background: #262C43;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #262C43;
+}
+::selection {
+  background: #262C43;
+  /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-webkit-selection {
+  background: #262C43;
+  color: #fff;
+}
+::-ms-selection {
+  background: #262C43;
+  color: #fff;
+}
+::-o-selection {
+  background: #262C43;
+  color: #fff;
+}
+::-moz-selection {
+  background: #262C43;
+  color: #fff;
+}
 button {
   padding: 0 1rem;
     border-radius: 9999px;
