@@ -2,12 +2,13 @@ import React, { Component } from "react"
 import Particles from "react-particles-js"
 import { Route, Switch } from "react-router-dom"
 import Header from "./Components/Header/Header"
+import Homepage from "./pages/Homepage"
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Particles
+        {/* <Particles
           id="particles-js"
           params={{
             particles: {
@@ -35,15 +36,15 @@ class App extends Component {
               },
             },
           }}
-        />
-    
+        /> */}
+      <div className="wrapper">
         <Header />
     
         <Switch>
-          {/* <Route exact path="/" component={() => <Homepage/>} /> */}
+          <Route exact path="/" component={() => <Homepage/>} />
        
         </Switch>
-
+      </div>
     </div>
       
     )
