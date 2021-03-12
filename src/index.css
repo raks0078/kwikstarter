@@ -5,9 +5,12 @@
   padding: 0;
 }
 body {
-  background: url("images/world_map.png") #010415;
+  background: url("images/world_map.png") no-repeat #010415;
   margin: 0;
   color: #ffffff;
+  background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
 }
 ::-webkit-scrollbar {
   width: 0;
