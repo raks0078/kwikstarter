@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <Particles
+        <Particles
           id="particles-js"
           params={{
             particles: {
@@ -29,24 +29,22 @@ class App extends Component {
               },
               lineLinked: {
                 distance: 150,
-                color: '#262C43',
+                color: "#262C43",
               },
               move: {
                 speed: 4,
               },
             },
           }}
-        /> */}
-      <div className="wrapper">
-        <Header />
-    
-        <Switch>
-          <Route exact path="/" component={() => <Homepage/>} />
-       
-        </Switch>
+        />
+        <div className="wrapper">
+          <Header />
+
+          <Switch>
+            <Route exact path="/" component={() => <Homepage />} />
+          </Switch>
+        </div>
       </div>
-    </div>
-      
     )
   }
 }
