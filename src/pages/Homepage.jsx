@@ -5,8 +5,8 @@ class Homepage extends Component {
   render() {
     return (
       <div className="homepage">
-        <div className="container">
-          <div className="hero-section">
+        <div className="hero-section">
+          <div className="container">
             <img src={bscpoologo} className="rotate" />
             <h2 className="text-center">The BSCPOOL<br />is the first decentralized IDO platform for the Binance Smart Chain Network.</h2>
             <h5>BSCPOOL will empower crypto currency projects with the ability to distribute tokens and raise liquidity.</h5>
@@ -15,6 +15,11 @@ class Homepage extends Component {
               <button className="button-secondary">Learn More</button>
             </div>
           </div>
+        </div>
+        <div className="about-us">
+            <div className="container">
+              fdfd
+            </div>
         </div>
       </div>
     )
