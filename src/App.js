@@ -20,7 +20,7 @@ const App = (props) => {
       <GlobalStyle />
       <StyledDiv>
         <div>
-          <Particles
+          {/* <Particles
             id="particles-js"
             params={{
               particles: {
@@ -48,7 +48,7 @@ const App = (props) => {
                 },
               },
             }}
-          />
+          /> */}
           <div className="wrapper">
             <Header themeToggler={handleThemeToggle} theme={theme} />
 

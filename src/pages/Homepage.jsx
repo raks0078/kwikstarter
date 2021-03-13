@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import bscpoologo from "../images/bcs_pool.svg"
+import blockchain from "../images/blockchain-cuties.jpg"
 import "./Homepage.scss"
 class Homepage extends Component {
   render() {
@@ -20,7 +21,7 @@ class Homepage extends Component {
             <div className="about-us">
               <div className="heading">About Us</div>
               <div className="d-flex">
-              <div className="circle-animation"></div>
+              {/* <div className="circle-animation"></div> */}
               <div className="content">
                 <div>
                   <h4>WHAT IS BSCPOOL?</h4>
@@ -36,6 +37,61 @@ class Homepage extends Component {
               </div>
               </div>
             </div>
+        </div>
+        <div className="container">
+          <div className="upcoming-pools">
+            <div className="heading">Upcoming Pools</div>
+            <div className="d-flex">
+              <div className="card">
+                <div className="square-box">
+                  <img src={blockchain} />
+                  Blockchain Cuties
+                </div>
+                <div className="total-text">
+                  <small>Total Raise</small>
+                  <h3>$440K</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                  </ul>
+                  {/* <div className="points">
+                    <small>Min Allocation</small>
+                    <span>0</span>
+                  </div>
+                  <div className="points">
+                    <small>Max Allocation</small>
+                    <span>TBA</span>
+                  </div>
+                  <div className="points">
+                    <small>Access</small>
+                    <span>Private</span>
+                  </div> */}
+                </div>
+              </div>
+              <div className="card">
+                <div className="square-box">
+                  fd
+                </div>
+              </div>
+              <div className="card">
+                <div className="square-box">
+                  fd
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )
