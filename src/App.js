@@ -5,6 +5,7 @@ import { lightTheme, darkTheme, GlobalStyle } from "./themes"
 
 import Header from "./Components/Header/Header"
 import Homepage from "./pages/Homepage"
+import FeaturedPoolNext from "./pages/FeaturedPoolNext"
 import styled, { ThemeProvider } from "styled-components"
 const StyledDiv = styled.div`
   color: ${(props) => props.theme.fontColor};
@@ -54,6 +55,7 @@ const App = (props) => {
 
             <Switch>
               <Route exact path="/" component={() => <Homepage />} theme={theme} />
+              <Route exact path="/featured-pool-next" component={() => <FeaturedPoolNext />} theme={theme} />
             </Switch>
           </div>
         </div>
