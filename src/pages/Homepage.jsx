@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import bscpoologo from "../images/bcs_pool.svg"
 import blockchain from "../images/blockchain-cuties.jpg"
+import konomi from "../images/konomi-network.jpg"
+import oddz from "../images/oddz-finance.png"
+import shyft from "../images/shyft-network.jpg"
+import convergence from "../images/convergence-finance.jpg"
 import "./Homepage.scss"
 class Homepage extends Component {
   render() {
@@ -41,7 +45,7 @@ class Homepage extends Component {
         <div className="container">
           <div className="upcoming-pools">
             <div className="heading">Upcoming Pools</div>
-            <div className="d-flex">
+            <div className="d-flex flex-wrap mt-5">
               <div className="card">
                 <div className="square-box">
                   <img src={blockchain} />
@@ -58,36 +62,227 @@ class Homepage extends Component {
                       <span>0</span>
                     </li>
                     <li>
-                      <small>Min Allocation</small>
-                      <span>0</span>
+                      <small>Max Allocation</small>
+                      <span>TBA</span>
                     </li>
+                    <li>
+                      <small>Access</small>
+                      <span>Private</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="time-limit">
+                  In 2 days
+                </div>
+              </div>
+              <div className="card">
+                <div className="square-box">
+                  <img src={konomi} />
+                  Konomi Network
+                </div>
+                <div className="total-text">
+                  <small>Total Raise</small>
+                  <h3>$200K</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
                     <li>
                       <small>Min Allocation</small>
                       <span>0</span>
                     </li>
+                    <li>
+                      <small>Max Allocation</small>
+                      <span>TBA</span>
+                    </li>
+                    <li>
+                      <small>Access</small>
+                      <span>Private</span>
+                    </li>
                   </ul>
-                  {/* <div className="points">
-                    <small>Min Allocation</small>
-                    <span>0</span>
-                  </div>
-                  <div className="points">
-                    <small>Max Allocation</small>
-                    <span>TBA</span>
-                  </div>
-                  <div className="points">
-                    <small>Access</small>
-                    <span>Private</span>
-                  </div> */}
+                </div>
+                <div className="time-limit">
+                  In 3 days
                 </div>
               </div>
               <div className="card">
                 <div className="square-box">
-                  fd
+                  <img src={oddz} />
+                  Oddz Finance
+                </div>
+                <div className="total-text">
+                  <small>Total Raise</small>
+                  <h3>$150K</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <small>Max Allocation</small>
+                      <span>TBA</span>
+                    </li>
+                    <li>
+                      <small>Access</small>
+                      <span>Private</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="time-limit">
+                  In 5 days
                 </div>
               </div>
               <div className="card">
                 <div className="square-box">
-                  fd
+                  <img src={shyft} />
+                  Shyft Network
+                </div>
+                <div className="total-text">
+                  <small>Total Raise</small>
+                  <h3>TBA</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <small>Max Allocation</small>
+                      <span>TBA</span>
+                    </li>
+                    <li>
+                      <small>Access</small>
+                      <span>Private</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="time-limit">
+                  In 11 days
+                </div>
+              </div>
+              <div className="card">
+                <div className="square-box">
+                  <img src={convergence} />
+                  Convergence Finance
+                </div>
+                <div className="total-text">
+                  <small>Total Raise</small>
+                  <h3>TBA</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <small>Max Allocation</small>
+                      <span>TBA</span>
+                    </li>
+                    <li>
+                      <small>Access</small>
+                      <span>Private</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="time-limit">
+                  In 12 days
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="featured-pools">
+            <div className="heading">Featured Pools</div>
+            <div className="d-flex flex-wrap">
+              <div className="card">
+                <div className="square-box">
+                  <img src={blockchain} />
+                  Blockchain Cuties
+                </div>
+                <div className="total-text">
+                  <small>Total Raise</small>
+                  <h3>$440K</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <small>Max Allocation</small>
+                      <span>TBA</span>
+                    </li>
+                    <li>
+                      <small>Access</small>
+                      <span>Private</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="time-limit">
+                  In 2 days
+                </div>
+              </div>
+              <div className="card">
+                <div className="square-box">
+                  <img src={konomi} />
+                  Konomi Network
+                </div>
+                <div className="total-text">
+                  <small>Total Raise</small>
+                  <h3>$200K</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <small>Max Allocation</small>
+                      <span>TBA</span>
+                    </li>
+                    <li>
+                      <small>Access</small>
+                      <span>Private</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="time-limit">
+                  In 3 days
+                </div>
+              </div>
+              <div className="card">
+                <div className="square-box">
+                  <img src={oddz} />
+                  Oddz Finance
+                </div>
+                <div className="total-text">
+                  <small>Total Raise</small>
+                  <h3>$150K</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Min Allocation</small>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <small>Max Allocation</small>
+                      <span>TBA</span>
+                    </li>
+                    <li>
+                      <small>Access</small>
+                      <span>Private</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="time-limit">
+                  In 5 days
                 </div>
               </div>
             </div>
