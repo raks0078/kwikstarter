@@ -7,6 +7,10 @@ import shyft from "../images/shyft-network.jpg"
 import convergence from "../images/convergence-finance.jpg"
 import chain from "../images/chain-guardiance.png"
 import ethernity from "../images/ethernity.jpg"
+import EmailIcon from '@material-ui/icons/Email';
+import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
+import TelegramIcon from '@material-ui/icons/Telegram';
+import LanguageIcon from '@material-ui/icons/Language';
 import "./Homepage.scss"
 class Homepage extends Component {
   render() {
@@ -628,6 +632,29 @@ class Homepage extends Component {
         <div className="container">
           <div className="contact">
             <div class="heading">Contact</div>
+            <div className="d-flex justify-content-center">
+              <div>
+                <div className="circle-animation">
+                <EmailIcon />
+                </div>
+              </div>
+              <div>
+                <div className="circle-animation">
+                <HeadsetMicIcon />
+                </div>
+              </div>
+              <div>
+                <div className="circle-animation">
+                <TelegramIcon />
+                </div>
+              </div>
+              <div>
+                <div className="circle-animation">
+                <LanguageIcon />
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
