@@ -586,6 +586,46 @@ class Homepage extends Component {
                 </div>
               </div>
             </div>
+            <div class="heading">Round 2</div>
+            <div className="round-two">
+              <div className="d-flex">
+                <div className="content">
+                  <div>
+                    <h4>WHAT WILL HAPPEN TO THE UNSOLD TOKENS?</h4>
+                    <h5>Not every individual will fulfill their full allocation. Users will have 23 hours to claim their <b>Round 1</b> allocation, after which the tiered system will transition to the <b>Round 2</b> FCFS (first come, first serve) model. All the unsold tokens are moved into another contract where users can purchase additional allocation from the outstanding supply up to a new maximum. Users will gain access to the FCFS round based on their tier:</h5>
+                    <ul>
+                      <li>Platinum can claim the new allocation immediately</li>
+                      <li>Gold can claim the new allocation after 15 minutes</li>
+                      <li>Silver can claim the new allocation after 30 minutes</li>
+                      <li>Bronze can claim the new allocation after 45 minutes</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>ARE THERE ANY OTHER BENEFITS TO HOLDING THE $BSCPOOL TOKEN?</h4>
+                    <h5>Absolutely. In fact, for every launch that is featured on our platform a <b>percentage of the total supply</b> will be airdropped to $BSCPOOL holders.</h5>
+                  </div>
+                </div>
+                {/* <div className="circle-animation"></div> */}
+              </div>
+              <div className="d-flex">
+                <div className="content-full">
+                  <div>
+                    <h4>$BSCPOOL COMMITTEE FOR PLATINUM MEMBERS</h4>
+                    <h5>Achieving platinum status will not only allow investors the highest allocation for pre-sale opportunities, but also additional benefits. For this elite tier, a governance committee will be created where users can help source projects, vet projects coming into the launchpad, and finally vote on upcoming changes to $BSCPOOL.</h5>
+                  </div>
+                  <div>
+                    <h4>WE WILL BE COLLECTING BOTH DATA AND FEEDBACK ON THE IDO STRUCTURE IN ORDER TO OPTIMIZE THE SYSTEM OVER TIME AS WELL AS TAKING INTO CONSIDERATION COMMUNITY FEEDBACK AND POTENTIAL DAO PROPOSALS.</h4>
+                    <h5>Our system is a predictable and provably fair system giving our users the proper incentives to accumulate and hold tokens and support each and every project launched. Over time, we will tweak weights, add new tiers and change other parameters as necessary to keep the system functional, competitive and rewarding for all community members.</h5>
+                    <small>$BSCPOOL is the next evolution of blockchain launchpads solving the fundamental flaws that plague existing launchpads. This platform benefits all holders of the token and allows for fair launches giving traders of all sizes the opportunity to invest in the best upcoming Binance Smart Chain projects.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="contact">
+            <div class="heading">Contact</div>
           </div>
         </div>
       </div>
