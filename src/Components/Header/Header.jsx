@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 import bscpoologo from "../../images/bcs_pool.svg"
-import LockIcon from '@material-ui/icons/Lock';
-import WhatshotIcon from '@material-ui/icons/Whatshot';
-import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
+import LockIcon from "@material-ui/icons/Lock"
+import WhatshotIcon from "@material-ui/icons/Whatshot"
+import WbIncandescentIcon from "@material-ui/icons/WbIncandescent"
 import "./Header.scss"
-import { IconButton } from '@material-ui/core';
+import { IconButton } from "@material-ui/core"
 class Header extends Component {
   render() {
     return (
@@ -12,7 +12,7 @@ class Header extends Component {
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src={bscpoologo}  className="rotate"/>
+              <img src={bscpoologo} className="rotate" />
               BSCPOOL
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,8 +31,8 @@ class Header extends Component {
                 </li>
               </ul>
               <ul class="navbar-nav">
-              <li class="nav-item">
-                  <button className="button-secondary button-round">
+                <li class="nav-item">
+                  <button className="button-secondary button-round" onClick={this.props.themeToggler}>
                     <WbIncandescentIcon />
                   </button>
                 </li>
@@ -52,7 +52,7 @@ class Header extends Component {
             </div>
           </div>
         </nav>
-    </header>
+      </header>
     )
   }
 }
