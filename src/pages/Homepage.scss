@@ -557,7 +557,7 @@
               
               .card {
                 position: absolute;
-                width: 60%;
+                width: 50%;
                 height: 100%;
                 left: 0;
                 right: 0;
@@ -576,7 +576,7 @@
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                height: 600px;
+                height: 565px;
               }
               
               .cards {
@@ -588,6 +588,7 @@
                 .card{
                     background-color: #262C43;
                     border: none;
+                    border-radius: 15px;
                 }
               }
               
@@ -598,19 +599,22 @@
                 object-fit: cover;
               }
               
-              #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+              #item-1:checked ~ .cards #tier-3, #item-2:checked ~ .cards #tier-1, #item-3:checked ~ .cards #tier-2, #item-4:checked ~ .cards #tier-3,
+              #item-5:checked ~ .cards #tier-4, #item-6:checked ~ .cards #tier-5 {
                 transform: translatex(-40%) scale(.8);
                 opacity: .4;
                 z-index: 0;
               }
               
-              #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+              #item-1:checked ~ .cards #tier-2, #item-2:checked ~ .cards #tier-3, #item-3:checked ~ .cards #tier-4, #item-4:checked ~ .cards #tier-5,
+              #item-5:checked ~ .cards #tier-6, #item-6:checked ~ .cards #tier-1 {
                 transform: translatex(40%) scale(.8);
                 opacity: .4;
                 z-index: 0;
               }
               
-              #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+              #item-1:checked ~ .cards #tier-1, #item-2:checked ~ .cards #tier-2, #item-3:checked ~ .cards #tier-3, #item-4:checked ~ .cards #tier-4, 
+              #item-5:checked ~ .cards #tier-5, #item-6:checked ~ .cards #tier-6{
                 transform: translatex(0) scale(1);
                 opacity: 1;
                 z-index: 1;
@@ -706,28 +710,25 @@
                 transform: translateY(-80px);
               }
               .card-carousel{
-                border: 1px solid #010415;
                 border-radius: 0 50px;
-                padding: 30px;
+                padding: 15px;
+                height: 100%;;
                 position: relative;
-                background-color: #010415;
-                width: 369px;
-                margin-right: 2rem;
-                min-height: 385px;
-                margin-bottom: 5rem;
+                height: 100%;
     
                 .square-box{
-                    background-color: #262C43;
-                    color: #fff;
-                    padding: 7px;
-                    border-radius: 0 50px 50px 0;
+                    background-color: #010415;
+                    color: #00AFFF;
+                    padding: 15px;
+                    border-radius: 9999px;
                     font-weight: bold;
                     letter-spacing: 1px;
-                    font-size: 13px;
+                    font-size: 20px;
                     text-transform: uppercase;
                     font-style: italic;
                     display: flex;
                     align-items: center;
+                    justify-content: center;
     
                     img{
                         max-width: 50px;
@@ -750,6 +751,7 @@
                     flex-direction: column;
                     margin-top: 2rem;
                     line-height: 34px;
+                    align-items: center;
     
                     small{
                         letter-spacing: 1px;
@@ -777,7 +779,7 @@
                     }
                 }
                 .block{
-                    margin-top: 2rem;
+                    margin-top: 1.5rem;
                     
                     ul{
                         list-style: none;
@@ -788,7 +790,7 @@
     
                         li{
                             margin-bottom: 10px;
-                            background-color: #262C43;
+                            background-color: #010415;
                             padding: 5px 5px 5px 15px;
                             border-radius: 9999px;
                             height: 45px;
@@ -801,7 +803,7 @@
                                 color: #00AFFF;
                                 min-width: 115px;
                                 text-align: right;
-                                background-color: #010415;
+                                background-color: #262C43;
                                 border-radius: 9999px;
                                 text-align: center;
                                 font-size: .875em;
@@ -836,6 +838,31 @@
                         }
                     }
                 }
+                .whitelist-req{
+                    small{
+                        letter-spacing: 1px;
+                        font-size: 12px;
+                        color: #00AFFF;
+                        line-height: 28px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                    }
+                    span{
+                        color: #00AFFF;
+                        min-width: 115px;
+                        background-color: #010415;
+                        border-radius: 9999px;
+                        text-align: center;
+                        font-size: .875em;
+                        height: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        letter-spacing: 1px;
+                        padding: 0 15px;
+                    }
+                }
                 .time-limit{
                     background-color: #00AFFF;
                     color: #ffffff;
@@ -843,19 +870,16 @@
                     border-radius: 9999px;
                     align-items: center;
                     justify-content: center;
-                    position: absolute;
-                    bottom: -13px;
-                    right: -35px;
-                    padding: 5px 15px;
+                    padding: 15px 25px;
                     font-weight: bold;
                     letter-spacing: 1px;
-                    font-size: 13px;
+                    font-size: 15px;
+                    width: 100%;
+                    height: 60px;
                     text-transform: uppercase;
                     font-style: italic;
-    
-                    svg{
-                        margin-right: 10px;
-                    }
+                    border: none;
+                    margin-top: 38px;
                 }
             }
         }

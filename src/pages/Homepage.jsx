@@ -371,59 +371,217 @@ class Homepage extends Component {
                 <input type="radio" name="slider" id="item-1" checked />
                 <input type="radio" name="slider" id="item-2" />
                 <input type="radio" name="slider" id="item-3" />
+                <input type="radio" name="slider" id="item-4" />
+                <input type="radio" name="slider" id="item-5" />
+                <input type="radio" name="slider" id="item-6" />
                 <div class="cards">
-                  <label class="card" for="item-1" id="song-1">
+                  <label class="card" for="item-1" id="tier-1">
                   <div className="card-carousel">
                 <div className="square-box">
-                  <img src={chain} />
-                  <span>
-                    ChainGuardians POLS
-                    <small>CGG/ETH</small>
-                  </span>
+                  <span>Bronze</span>
                 </div>
                 <div className="total-text">
-                  <small>Ratio per 1 ETH</small>
-                  <h3>14925.37 CGG</h3>
-                </div>
-                <div className="total-text mt-1">
-                  <small>Progress</small>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{width: "100%"}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div className="counts d-flex justify-content-between">
-                    <small>100% (Min.51%)</small>
-                    <small>965966/966000</small>
-                  </div>
+                  <small>Staking Requirement</small>
+                  <h3>1000</h3>
                 </div>
                 <div className="d-flex block">
                   <ul>
                     <li>
-                      <small>Participants</small>
-                      <span>332</span>
+                      <small>Staking Length Required</small>
+                      <span>7 Days</span>
                     </li>
                     <li>
-                      <small>Maximum</small>
-                      <span>0.197 ETH</span>
+                      <small>Guaranteed Allocation</small>
+                      <span>Yes</span>
                     </li>
                     <li>
-                      <small>Access</small>
-                      <span>Private</span>
+                      <small>Pool Weight</small>
+                      <span>10</span>
                     </li>
                   </ul>
                 </div>
-                <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
-                Filled
+                <div className="d-flex flex-column whitelist-req">
+                  <small>Whitelist Requirement Twitter</small>
+                  <div className="d-flex justify-content-between">
+                    <span>Like</span>
+                    <span>Comment</span>
+                    <span>Retweet</span>
+                  </div>
                 </div>
+                <button className="time-limit">Learn More</button>
               </div>
                   </label>
-                  <label class="card" for="item-2" id="song-2">
-                    <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song" />
+                  <label class="card" for="item-2" id="tier-2">
+                  <div className="card-carousel">
+                <div className="square-box">
+                  <span>Silver</span>
+                </div>
+                <div className="total-text">
+                  <small>Staking Requirement</small>
+                  <h3>2500</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Staking Length Required</small>
+                      <span>7 Days</span>
+                    </li>
+                    <li>
+                      <small>Guaranteed Allocation</small>
+                      <span>Yes</span>
+                    </li>
+                    <li>
+                      <small>Pool Weight</small>
+                      <span>30</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="d-flex flex-column whitelist-req">
+                  <small>Whitelist Requirement Twitter</small>
+                  <div className="d-flex justify-content-between">
+                    <span>Like</span>
+                    <span>Comment</span>
+                    <span>Retweet</span>
+                  </div>
+                </div>
+                <button className="time-limit">Learn More</button>
+              </div>
                   </label>
-                  <label class="card" for="item-3" id="song-3">
-                    <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song" />
+                  <label class="card" for="item-3" id="tier-3">
+                  <div className="card-carousel">
+                <div className="square-box">
+                  <span>Gold</span>
+                </div>
+                <div className="total-text">
+                  <small>Staking Requirement</small>
+                  <h3>5000</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Staking Length Required</small>
+                      <span>7 Days</span>
+                    </li>
+                    <li>
+                      <small>Guaranteed Allocation</small>
+                      <span>Yes</span>
+                    </li>
+                    <li>
+                      <small>Pool Weight</small>
+                      <span>65</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="d-flex flex-column whitelist-req">
+                  <small>Whitelist Requirement Twitter</small>
+                  <div className="d-flex justify-content-center">
+                    <span>None</span>
+                  </div>
+                </div>
+                <button className="time-limit">Learn More</button>
+              </div>
+                  </label>
+                  <label class="card" for="item-4" id="tier-4">
+                  <div className="card-carousel">
+                <div className="square-box">
+                  <span>Platinum</span>
+                </div>
+                <div className="total-text">
+                  <small>Staking Requirement</small>
+                  <h3>10000</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Staking Length Required</small>
+                      <span>7 Days</span>
+                    </li>
+                    <li>
+                      <small>Guaranteed Allocation</small>
+                      <span>Yes</span>
+                    </li>
+                    <li>
+                      <small>Pool Weight</small>
+                      <span>145</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="d-flex flex-column whitelist-req">
+                  <small>Whitelist Requirement Twitter</small>
+                  <div className="d-flex justify-content-center">
+                    <span>None</span>
+                  </div>
+                </div>
+                <button className="time-limit">Learn More</button>
+              </div>
+                  </label>
+                  <label class="card" for="item-5" id="tier-5">
+                  <div className="card-carousel">
+                <div className="square-box">
+                  <span>Diamond</span>
+                </div>
+                <div className="total-text">
+                  <small>Staking Requirement</small>
+                  <h3>####</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Staking Length Required</small>
+                      <span>30 Days</span>
+                    </li>
+                    <li>
+                      <small>Guaranteed Allocation</small>
+                      <span>Yes</span>
+                    </li>
+                    <li>
+                      <small>Pool Weight</small>
+                      <span>Separate VIP discounted pool</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="d-flex flex-column whitelist-req">
+                  <small>Whitelist Requirement Twitter</small>
+                  <div className="d-flex justify-content-center">
+                    <span>None</span>
+                  </div>
+                </div>
+                <button className="time-limit">Learn More</button>
+              </div>
+                  </label>
+                  <label class="card" for="item-6" id="tier-6">
+                  <div className="card-carousel">
+                <div className="square-box">
+                  <span>Community Contributor</span>
+                </div>
+                <div className="total-text">
+                  <small>Staking Requirement</small>
+                  <h3>####</h3>
+                </div>
+                <div className="d-flex block">
+                  <ul>
+                    <li>
+                      <small>Staking Length Required</small>
+                      <span>30 Days</span>
+                    </li>
+                    <li>
+                      <small>Guaranteed Allocation</small>
+                      <span>Yes</span>
+                    </li>
+                    <li>
+                      <small>Pool Weight</small>
+                      <span>Separate bonus pool</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="d-flex flex-column whitelist-req">
+                  <small>Whitelist Requirement Twitter</small>
+                  <div className="d-flex justify-content-center">
+                    <span>None</span>
+                  </div>
+                </div>
+                <button className="time-limit">Learn More</button>
+              </div>
                   </label>
                 </div>
               </div>
