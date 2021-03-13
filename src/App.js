@@ -7,6 +7,7 @@ import Header from "./Components/Header/Header"
 import Homepage from "./pages/Homepage"
 import FeaturedPoolNext from "./pages/FeaturedPoolNext"
 import styled, { ThemeProvider } from "styled-components"
+import Footer from "./Components/Footer/Footer"
 const StyledDiv = styled.div`
   color: ${(props) => props.theme.fontColor};
   background-color: ${(props) => props.theme.sidebarBgColor};
@@ -57,6 +58,7 @@ const App = (props) => {
               <Route exact path="/" component={() => <Homepage />} theme={theme} />
               <Route exact path="/featured-pool-next" component={() => <FeaturedPoolNext />} theme={theme} />
             </Switch>
+            <Footer />
           </div>
         </div>
       </StyledDiv>

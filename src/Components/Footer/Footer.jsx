@@ -3,10 +3,19 @@ import "./Footer.scss"
 class Footer extends Component {
   render() {
     return (
-      <div>
-        hey...footer
-        <div>hey...footer</div>
-      </div>
+      <footer>
+        <div className="container">
+          Copyright © 2021. All Rights Reserved by BSCPool
+          <ul>
+            <li>
+              <a href="javascript:void(0)">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     )
   }
 }
