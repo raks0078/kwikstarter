@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 import bscpoologo from "../images/bcs_pool.svg"
 import blockchain from "../images/blockchain-cuties.jpg"
 import konomi from "../images/konomi-network.jpg"
@@ -7,10 +7,10 @@ import shyft from "../images/shyft-network.jpg"
 import convergence from "../images/convergence-finance.jpg"
 import chain from "../images/chain-guardiance.png"
 import ethernity from "../images/ethernity.jpg"
-import EmailIcon from '@material-ui/icons/Email';
-import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
-import TelegramIcon from '@material-ui/icons/Telegram';
-import LanguageIcon from '@material-ui/icons/Language';
+import EmailIcon from "@material-ui/icons/Email"
+import HeadsetMicIcon from "@material-ui/icons/HeadsetMic"
+import TelegramIcon from "@material-ui/icons/Telegram"
+import LanguageIcon from "@material-ui/icons/Language"
 import "./Homepage.scss"
 class Homepage extends Component {
   render() {
@@ -19,7 +19,11 @@ class Homepage extends Component {
         <div className="hero-section">
           <div className="container">
             <img src={bscpoologo} className="rotate" />
-            <h2 className="text-center">The BSCPOOL<br />is the first decentralized IDO platform for the Binance Smart Chain Network.</h2>
+            <h2 className="text-center">
+              The BSCPOOL
+              <br />
+              is the first decentralized IDO platform for the Binance Smart Chain Network.
+            </h2>
             <h5>BSCPOOL will empower crypto currency projects with the ability to distribute tokens and raise liquidity.</h5>
             <div className="d-flex justify-content-center mt-4">
               <button className="button-primary">View All Projects</button>
@@ -28,9 +32,9 @@ class Homepage extends Component {
           </div>
         </div>
         <div className="container">
-            <div className="about-us">
-              <div className="heading">About Us</div>
-              <div className="d-flex">
+          <div className="about-us">
+            <div className="heading">About Us</div>
+            <div className="d-flex">
               {/* <div className="circle-animation"></div> */}
               <div className="content">
                 <div>
@@ -41,12 +45,17 @@ class Homepage extends Component {
                 <div>
                   <h4>WHY CHOOSE US?</h4>
                   <h5>BSCPool has found a solution to incentivize and reward all token holders in a way that is inclusive and with a low barrier to entry.</h5>
-                  <small>The fundamental flaws of existing launchpads is that <b>acquiring enough tokens to participate in the ecosystem is prohibitive</b>, and even <b>if you do hold the tokens, you are not guaranteed an allocation spot</b>. They are based on a first come first serve basis where automated bots can fill the whitelist spots in a matter of seconds. <b>BSCPool is creating fair decentralized launches</b>.</small><br/>
-                  <small className="mt-15">The hallmark of the BSCPool is a two-round system that makes <b>every tier level guaranteed an allocation</b>. There is no luck, and no lotteries, and no bots; only fair distributed rewards for all participants.</small>
+                  <small>
+                    The fundamental flaws of existing launchpads is that <b>acquiring enough tokens to participate in the ecosystem is prohibitive</b>, and even <b>if you do hold the tokens, you are not guaranteed an allocation spot</b>. They are based on a first come first serve basis where automated bots can fill the whitelist spots in a matter of seconds. <b>BSCPool is creating fair decentralized launches</b>.
+                  </small>
+                  <br />
+                  <small className="mt-15">
+                    The hallmark of the BSCPool is a two-round system that makes <b>every tier level guaranteed an allocation</b>. There is no luck, and no lotteries, and no bots; only fair distributed rewards for all participants.
+                  </small>
                 </div>
               </div>
-              </div>
             </div>
+          </div>
         </div>
         <div className="container">
           <div className="upcoming-pools">
@@ -78,9 +87,9 @@ class Homepage extends Component {
                   </ul>
                 </div>
                 <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="4" fill="#010415"></circle>
+                  </svg>
                   In 2 days
                 </div>
               </div>
@@ -110,9 +119,9 @@ class Homepage extends Component {
                   </ul>
                 </div>
                 <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="4" fill="#010415"></circle>
+                  </svg>
                   In 3 days
                 </div>
               </div>
@@ -142,9 +151,9 @@ class Homepage extends Component {
                   </ul>
                 </div>
                 <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="4" fill="#010415"></circle>
+                  </svg>
                   In 5 days
                 </div>
               </div>
@@ -174,9 +183,9 @@ class Homepage extends Component {
                   </ul>
                 </div>
                 <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="4" fill="#010415"></circle>
+                  </svg>
                   In 11 days
                 </div>
               </div>
@@ -206,9 +215,9 @@ class Homepage extends Component {
                   </ul>
                 </div>
                 <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="4" fill="#010415"></circle>
+                  </svg>
                   In 12 days
                 </div>
               </div>
@@ -234,7 +243,7 @@ class Homepage extends Component {
                 <div className="total-text mt-1">
                   <small>Progress</small>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{width: "100%"}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div className="counts d-flex justify-content-between">
                     <small>100% (Min.51%)</small>
@@ -258,10 +267,10 @@ class Homepage extends Component {
                   </ul>
                 </div>
                 <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
-                Filled
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="4" fill="#010415"></circle>
+                  </svg>
+                  Filled
                 </div>
               </div>
               <div className="card">
@@ -279,7 +288,7 @@ class Homepage extends Component {
                 <div className="total-text mt-1">
                   <small>Progress</small>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{width: "100%"}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div className="counts d-flex justify-content-between">
                     <small>100% (Min.50%)</small>
@@ -303,17 +312,17 @@ class Homepage extends Component {
                   </ul>
                 </div>
                 <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
-                Filled
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="4" fill="#010415"></circle>
+                  </svg>
+                  Filled
                 </div>
               </div>
               <div className="card">
                 <div className="square-box">
                   <img src={ethernity} />
                   <span>
-                  Ethernity POLS
+                    Ethernity POLS
                     <small>ERN/ETH</small>
                   </span>
                 </div>
@@ -324,7 +333,7 @@ class Homepage extends Component {
                 <div className="total-text mt-1">
                   <small>Progress</small>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{width: "100%"}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div className="counts d-flex justify-content-between">
                     <small>100% (Min.51%)</small>
@@ -348,10 +357,10 @@ class Homepage extends Component {
                   </ul>
                 </div>
                 <div className="time-limit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle cx="4" cy="4" r="4" fill="#010415"></circle>
-                </svg>
-                Filled
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="4" fill="#010415"></circle>
+                  </svg>
+                  Filled
                 </div>
               </div>
             </div>
@@ -371,225 +380,225 @@ class Homepage extends Component {
             </div>
             <div class="heading">Round 1</div>
             <div className="carousel">
-            {/* <div className="next"></div>
-            <div className="prev"></div> */}
+              <div className="next"></div>
+              <div className="prev"></div>
               <div class="container">
-                <input type="radio" name="slider" id="item-1" checked />
+                {/* <input type="radio" name="slider" id="item-1" checked />
                 <input type="radio" name="slider" id="item-2" />
                 <input type="radio" name="slider" id="item-3" />
                 <input type="radio" name="slider" id="item-4" />
                 <input type="radio" name="slider" id="item-5" />
-                <input type="radio" name="slider" id="item-6" />
-                <div class="cards">
-                  <label class="card" for="item-1" id="tier-1">
-                  <div className="card-carousel">
-                <div className="square-box">
-                  <span>Bronze</span>
-                </div>
-                <div className="total-text">
-                  <small>Staking Requirement</small>
-                  <h3>1000</h3>
-                </div>
-                <div className="d-flex block">
-                  <ul>
-                    <li>
-                      <small>Staking Length Required</small>
-                      <span>7 Days</span>
-                    </li>
-                    <li>
-                      <small>Guaranteed Allocation</small>
-                      <span>Yes</span>
-                    </li>
-                    <li>
-                      <small>Pool Weight</small>
-                      <span>10</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="d-flex flex-column whitelist-req">
-                  <small>Whitelist Requirement Twitter</small>
-                  <div className="d-flex justify-content-between">
-                    <span>Like</span>
-                    <span>Comment</span>
-                    <span>Retweet</span>
-                  </div>
-                </div>
-                <button className="time-limit">Learn More</button>
-              </div>
-                  </label>
-                  <label class="card" for="item-2" id="tier-2">
-                  <div className="card-carousel">
-                <div className="square-box">
-                  <span>Silver</span>
-                </div>
-                <div className="total-text">
-                  <small>Staking Requirement</small>
-                  <h3>2500</h3>
-                </div>
-                <div className="d-flex block">
-                  <ul>
-                    <li>
-                      <small>Staking Length Required</small>
-                      <span>7 Days</span>
-                    </li>
-                    <li>
-                      <small>Guaranteed Allocation</small>
-                      <span>Yes</span>
-                    </li>
-                    <li>
-                      <small>Pool Weight</small>
-                      <span>30</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="d-flex flex-column whitelist-req">
-                  <small>Whitelist Requirement Twitter</small>
-                  <div className="d-flex justify-content-between">
-                    <span>Like</span>
-                    <span>Comment</span>
-                    <span>Retweet</span>
-                  </div>
-                </div>
-                <button className="time-limit">Learn More</button>
-              </div>
-                  </label>
-                  <label class="card" for="item-3" id="tier-3">
-                  <div className="card-carousel">
-                <div className="square-box">
-                  <span>Gold</span>
-                </div>
-                <div className="total-text">
-                  <small>Staking Requirement</small>
-                  <h3>5000</h3>
-                </div>
-                <div className="d-flex block">
-                  <ul>
-                    <li>
-                      <small>Staking Length Required</small>
-                      <span>7 Days</span>
-                    </li>
-                    <li>
-                      <small>Guaranteed Allocation</small>
-                      <span>Yes</span>
-                    </li>
-                    <li>
-                      <small>Pool Weight</small>
-                      <span>65</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="d-flex flex-column whitelist-req">
-                  <small>Whitelist Requirement Twitter</small>
-                  <div className="d-flex justify-content-center">
-                    <span>None</span>
-                  </div>
-                </div>
-                <button className="time-limit">Learn More</button>
-              </div>
-                  </label>
-                  <label class="card" for="item-4" id="tier-4">
-                  <div className="card-carousel">
-                <div className="square-box">
-                  <span>Platinum</span>
-                </div>
-                <div className="total-text">
-                  <small>Staking Requirement</small>
-                  <h3>10000</h3>
-                </div>
-                <div className="d-flex block">
-                  <ul>
-                    <li>
-                      <small>Staking Length Required</small>
-                      <span>7 Days</span>
-                    </li>
-                    <li>
-                      <small>Guaranteed Allocation</small>
-                      <span>Yes</span>
-                    </li>
-                    <li>
-                      <small>Pool Weight</small>
-                      <span>145</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="d-flex flex-column whitelist-req">
-                  <small>Whitelist Requirement Twitter</small>
-                  <div className="d-flex justify-content-center">
-                    <span>None</span>
-                  </div>
-                </div>
-                <button className="time-limit">Learn More</button>
-              </div>
-                  </label>
-                  <label class="card" for="item-5" id="tier-5">
-                  <div className="card-carousel">
-                <div className="square-box">
-                  <span>Diamond</span>
-                </div>
-                <div className="total-text">
-                  <small>Staking Requirement</small>
-                  <h3>####</h3>
-                </div>
-                <div className="d-flex block">
-                  <ul>
-                    <li>
-                      <small>Staking Length Required</small>
-                      <span>30 Days</span>
-                    </li>
-                    <li>
-                      <small>Guaranteed Allocation</small>
-                      <span>Yes</span>
-                    </li>
-                    <li>
-                      <small>Pool Weight</small>
-                      <span>Separate VIP discounted pool</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="d-flex flex-column whitelist-req">
-                  <small>Whitelist Requirement Twitter</small>
-                  <div className="d-flex justify-content-center">
-                    <span>None</span>
-                  </div>
-                </div>
-                <button className="time-limit">Learn More</button>
-              </div>
-                  </label>
-                  <label class="card" for="item-6" id="tier-6">
-                  <div className="card-carousel">
-                <div className="square-box">
-                  <span>Community Contributor</span>
-                </div>
-                <div className="total-text">
-                  <small>Staking Requirement</small>
-                  <h3>####</h3>
-                </div>
-                <div className="d-flex block">
-                  <ul>
-                    <li>
-                      <small>Staking Length Required</small>
-                      <span>30 Days</span>
-                    </li>
-                    <li>
-                      <small>Guaranteed Allocation</small>
-                      <span>Yes</span>
-                    </li>
-                    <li>
-                      <small>Pool Weight</small>
-                      <span>Separate bonus pool</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="d-flex flex-column whitelist-req">
-                  <small>Whitelist Requirement Twitter</small>
-                  <div className="d-flex justify-content-center">
-                    <span>None</span>
-                  </div>
-                </div>
-                <button className="time-limit">Learn More</button>
-              </div>
-                  </label>
-                </div>
+                <input type="radio" name="slider" id="item-6" /> */}
+                <ul class="cards">
+                  <li class="card" for="item-1" id="tier-1">
+                    <div className="card-carousel">
+                      <div className="square-box">
+                        <span>Bronze</span>
+                      </div>
+                      <div className="total-text">
+                        <small>Staking Requirement</small>
+                        <h3>1000</h3>
+                      </div>
+                      <div className="d-flex block">
+                        <ul>
+                          <li>
+                            <small>Staking Length Required</small>
+                            <span>7 Days</span>
+                          </li>
+                          <li>
+                            <small>Guaranteed Allocation</small>
+                            <span>Yes</span>
+                          </li>
+                          <li>
+                            <small>Pool Weight</small>
+                            <span>10</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex flex-column whitelist-req">
+                        <small>Whitelist Requirement Twitter</small>
+                        <div className="d-flex justify-content-between">
+                          <span>Like</span>
+                          <span>Comment</span>
+                          <span>Retweet</span>
+                        </div>
+                      </div>
+                      <button className="time-limit">Learn More</button>
+                    </div>
+                  </li>
+                  <li class="card" for="item-2" id="tier-2">
+                    <div className="card-carousel">
+                      <div className="square-box">
+                        <span>Silver</span>
+                      </div>
+                      <div className="total-text">
+                        <small>Staking Requirement</small>
+                        <h3>2500</h3>
+                      </div>
+                      <div className="d-flex block">
+                        <ul>
+                          <li>
+                            <small>Staking Length Required</small>
+                            <span>7 Days</span>
+                          </li>
+                          <li>
+                            <small>Guaranteed Allocation</small>
+                            <span>Yes</span>
+                          </li>
+                          <li>
+                            <small>Pool Weight</small>
+                            <span>30</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex flex-column whitelist-req">
+                        <small>Whitelist Requirement Twitter</small>
+                        <div className="d-flex justify-content-between">
+                          <span>Like</span>
+                          <span>Comment</span>
+                          <span>Retweet</span>
+                        </div>
+                      </div>
+                      <button className="time-limit">Learn More</button>
+                    </div>
+                  </li>
+                  <li class="card" for="item-3" id="tier-3">
+                    <div className="card-carousel">
+                      <div className="square-box">
+                        <span>Gold</span>
+                      </div>
+                      <div className="total-text">
+                        <small>Staking Requirement</small>
+                        <h3>5000</h3>
+                      </div>
+                      <div className="d-flex block">
+                        <ul>
+                          <li>
+                            <small>Staking Length Required</small>
+                            <span>7 Days</span>
+                          </li>
+                          <li>
+                            <small>Guaranteed Allocation</small>
+                            <span>Yes</span>
+                          </li>
+                          <li>
+                            <small>Pool Weight</small>
+                            <span>65</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex flex-column whitelist-req">
+                        <small>Whitelist Requirement Twitter</small>
+                        <div className="d-flex justify-content-center">
+                          <span>None</span>
+                        </div>
+                      </div>
+                      <button className="time-limit">Learn More</button>
+                    </div>
+                  </li>
+                  <li class="card" for="item-4" id="tier-4">
+                    <div className="card-carousel">
+                      <div className="square-box">
+                        <span>Platinum</span>
+                      </div>
+                      <div className="total-text">
+                        <small>Staking Requirement</small>
+                        <h3>10000</h3>
+                      </div>
+                      <div className="d-flex block">
+                        <ul>
+                          <li>
+                            <small>Staking Length Required</small>
+                            <span>7 Days</span>
+                          </li>
+                          <li>
+                            <small>Guaranteed Allocation</small>
+                            <span>Yes</span>
+                          </li>
+                          <li>
+                            <small>Pool Weight</small>
+                            <span>145</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex flex-column whitelist-req">
+                        <small>Whitelist Requirement Twitter</small>
+                        <div className="d-flex justify-content-center">
+                          <span>None</span>
+                        </div>
+                      </div>
+                      <button className="time-limit">Learn More</button>
+                    </div>
+                  </li>
+                  <li class="card" for="item-5" id="tier-5">
+                    <div className="card-carousel">
+                      <div className="square-box">
+                        <span>Diamond</span>
+                      </div>
+                      <div className="total-text">
+                        <small>Staking Requirement</small>
+                        <h3>####</h3>
+                      </div>
+                      <div className="d-flex block">
+                        <ul>
+                          <li>
+                            <small>Staking Length Required</small>
+                            <span>30 Days</span>
+                          </li>
+                          <li>
+                            <small>Guaranteed Allocation</small>
+                            <span>Yes</span>
+                          </li>
+                          <li>
+                            <small>Pool Weight</small>
+                            <span>Separate VIP discounted pool</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex flex-column whitelist-req">
+                        <small>Whitelist Requirement Twitter</small>
+                        <div className="d-flex justify-content-center">
+                          <span>None</span>
+                        </div>
+                      </div>
+                      <button className="time-limit">Learn More</button>
+                    </div>
+                  </li>
+                  <li class="card" for="item-6" id="tier-6">
+                    <div className="card-carousel">
+                      <div className="square-box">
+                        <span>Community Contributor</span>
+                      </div>
+                      <div className="total-text">
+                        <small>Staking Requirement</small>
+                        <h3>####</h3>
+                      </div>
+                      <div className="d-flex block">
+                        <ul>
+                          <li>
+                            <small>Staking Length Required</small>
+                            <span>30 Days</span>
+                          </li>
+                          <li>
+                            <small>Guaranteed Allocation</small>
+                            <span>Yes</span>
+                          </li>
+                          <li>
+                            <small>Pool Weight</small>
+                            <span>Separate bonus pool</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex flex-column whitelist-req">
+                        <small>Whitelist Requirement Twitter</small>
+                        <div className="d-flex justify-content-center">
+                          <span>None</span>
+                        </div>
+                      </div>
+                      <button className="time-limit">Learn More</button>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="heading">Round 2</div>
@@ -598,7 +607,9 @@ class Homepage extends Component {
                 <div className="content">
                   <div>
                     <h4>WHAT WILL HAPPEN TO THE UNSOLD TOKENS?</h4>
-                    <h5>Not every individual will fulfill their full allocation. Users will have 23 hours to claim their <b>Round 1</b> allocation, after which the tiered system will transition to the <b>Round 2</b> FCFS (first come, first serve) model. All the unsold tokens are moved into another contract where users can purchase additional allocation from the outstanding supply up to a new maximum. Users will gain access to the FCFS round based on their tier:</h5>
+                    <h5>
+                      Not every individual will fulfill their full allocation. Users will have 23 hours to claim their <b>Round 1</b> allocation, after which the tiered system will transition to the <b>Round 2</b> FCFS (first come, first serve) model. All the unsold tokens are moved into another contract where users can purchase additional allocation from the outstanding supply up to a new maximum. Users will gain access to the FCFS round based on their tier:
+                    </h5>
                     <ul>
                       <li>Platinum can claim the new allocation immediately</li>
                       <li>Gold can claim the new allocation after 15 minutes</li>
@@ -608,7 +619,9 @@ class Homepage extends Component {
                   </div>
                   <div>
                     <h4>ARE THERE ANY OTHER BENEFITS TO HOLDING THE $BSCPOOL TOKEN?</h4>
-                    <h5>Absolutely. In fact, for every launch that is featured on our platform a <b>percentage of the total supply</b> will be airdropped to $BSCPOOL holders.</h5>
+                    <h5>
+                      Absolutely. In fact, for every launch that is featured on our platform a <b>percentage of the total supply</b> will be airdropped to $BSCPOOL holders.
+                    </h5>
                   </div>
                 </div>
                 {/* <div className="circle-animation"></div> */}
@@ -635,26 +648,25 @@ class Homepage extends Component {
             <div className="d-flex justify-content-center">
               <div className="circle-animation-wrap">
                 <div className="circle-animation">
-                <EmailIcon />
+                  <EmailIcon />
                 </div>
               </div>
               <div className="circle-animation-wrap">
                 <div className="circle-animation">
-                <HeadsetMicIcon />
+                  <HeadsetMicIcon />
                 </div>
               </div>
               <div className="circle-animation-wrap">
                 <div className="circle-animation">
-                <TelegramIcon />
+                  <TelegramIcon />
                 </div>
               </div>
               <div className="circle-animation-wrap">
                 <div className="circle-animation">
-                <LanguageIcon />
+                  <LanguageIcon />
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
