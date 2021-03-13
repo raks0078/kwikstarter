@@ -367,6 +367,8 @@ class Homepage extends Component {
             </div>
             <div class="heading">Round 1</div>
             <div className="carousel">
+            {/* <div className="next"></div>
+            <div className="prev"></div> */}
               <div class="container">
                 <input type="radio" name="slider" id="item-1" checked />
                 <input type="radio" name="slider" id="item-2" />
