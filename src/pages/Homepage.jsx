@@ -633,22 +633,22 @@ class Homepage extends Component {
           <div className="contact">
             <div class="heading">Contact</div>
             <div className="d-flex justify-content-center">
-              <div>
+              <div className="circle-animation-wrap">
                 <div className="circle-animation">
                 <EmailIcon />
                 </div>
               </div>
-              <div>
+              <div className="circle-animation-wrap">
                 <div className="circle-animation">
                 <HeadsetMicIcon />
                 </div>
               </div>
-              <div>
+              <div className="circle-animation-wrap">
                 <div className="circle-animation">
                 <TelegramIcon />
                 </div>
               </div>
-              <div>
+              <div className="circle-animation-wrap">
                 <div className="circle-animation">
                 <LanguageIcon />
                 </div>
