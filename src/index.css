@@ -12,6 +12,9 @@ body {
     background-position: center top;
     background-size: cover;
 }
+#particles-js canvas{
+  position: fixed;
+}
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
