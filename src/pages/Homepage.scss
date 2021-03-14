@@ -585,7 +585,7 @@
           border-radius: 15px;
           width: 370px;
           margin-bottom: 5rem;
-          height: 530px;
+          height: 595px;
         }
         .card:nth-child(3n) {
           margin-right: 0;
@@ -593,7 +593,8 @@
         .card:nth-child(1),
         .card:nth-child(3),
         .card:nth-child(4),
-        .card:nth-child(6) {
+        .card:nth-child(6), 
+        .card:last-child {
           transform: scale(0.9);
         }
       }
@@ -742,9 +743,9 @@
             letter-spacing: 1px;
             font-size: 12px;
             color: #00afff;
-            line-height: 28px;
+            line-height: 22px;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             margin-top: 10px;
           }
           span {
@@ -777,12 +778,13 @@
           font-weight: bold;
           letter-spacing: 1px;
           font-size: 15px;
-          width: 100%;
+          width: 92%;
           height: 60px;
           text-transform: uppercase;
           font-style: italic;
           border: none;
-          margin-top: 38px;
+          position: absolute;
+        bottom: -28px;
         }
       }
 
