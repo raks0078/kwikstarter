@@ -34,7 +34,7 @@ class Homepage extends Component {
               </div>
             </div>
             <div className="wrap-img">
-              <img src={heroImage} />
+              {/* <img src={heroImage} /> */}
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@ class Homepage extends Component {
           <div className="featured-pools">
             <div className="heading">Featured Pools</div>
             <div className="d-flex flex-wrap">
-              <div className="card">
+              <Link to="/featured-pool-next" className="card">
                 <div className="square-box">
                   <img src={chain} />
                   <span>
@@ -279,8 +279,8 @@ class Homepage extends Component {
                   </svg>
                   Filled
                 </div>
-              </div>
-              <div className="card">
+              </Link>
+              <Link to="/featured-pool-next" className="card">
                 <div className="square-box">
                   <img src={chain} />
                   <span>
@@ -324,8 +324,8 @@ class Homepage extends Component {
                   </svg>
                   Filled
                 </div>
-              </div>
-              <div className="card">
+              </Link>
+              <Link to="/featured-pool-next" className="card">
                 <div className="square-box">
                   <img src={ethernity} />
                   <span>
@@ -369,7 +369,7 @@ class Homepage extends Component {
                   </svg>
                   Filled
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="d-flex justify-content-end">
               <a class="single-link" href="javascript:void(0)">
