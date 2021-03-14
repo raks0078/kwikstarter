@@ -12,6 +12,7 @@ import HeadsetMicIcon from "@material-ui/icons/HeadsetMic"
 import TelegramIcon from "@material-ui/icons/Telegram"
 import LanguageIcon from "@material-ui/icons/Language"
 import heroImage from "../images/bscpool-heroimg.gif"
+import { Link } from "react-router-dom"
 import "./Homepage.scss"
 class Homepage extends Component {
   render() {
