@@ -382,6 +382,7 @@
         h3 {
           font-weight: bold;
           font-size: 35px;
+          color: #fff;
         }
         .progress {
           border-radius: 9999px;
@@ -434,6 +435,9 @@
               letter-spacing: 1px;
               padding: 0 15px;
             }
+            small{
+              color: #ffffff;
+            }
           }
         }
 
@@ -479,6 +483,10 @@
           margin-right: 10px;
         }
       }
+    }
+    .card:hover, 
+    .card.active{
+      border: 1px solid #00afff;
     }
     .card:last-child {
       margin-right: 0;
