@@ -11,6 +11,7 @@ import EmailIcon from "@material-ui/icons/Email"
 import HeadsetMicIcon from "@material-ui/icons/HeadsetMic"
 import TelegramIcon from "@material-ui/icons/Telegram"
 import LanguageIcon from "@material-ui/icons/Language"
+import heroImage from "../images/bscpool-heroimg.gif"
 import "./Homepage.scss"
 class Homepage extends Component {
   render() {
@@ -18,16 +19,21 @@ class Homepage extends Component {
       <div className="homepage">
         <div className="hero-section">
           <div className="container">
-            <img src={bscpoologo} className="rotate" />
-            <h2 className="text-center">
-              The BSCPOOL
-              <br />
-              is the first decentralized IDO platform for the Binance Smart Chain Network.
-            </h2>
-            <h5>BSCPOOL will empower crypto currency projects with the ability to distribute tokens and raise liquidity.</h5>
-            <div className="d-flex justify-content-center mt-4">
-              <button className="button-primary">View All Projects</button>
-              <button className="button-secondary">Learn More</button>
+            <div className="wrap-content">
+              {/* <img src={bscpoologo} className="rotate" /> */}
+              <h2>
+                The BSCPOOL
+                <br />
+                is the first decentralized IDO platform for the Binance Smart Chain Network.
+              </h2>
+              <h5>BSCPOOL will empower crypto currency projects with the ability to distribute tokens and raise liquidity.</h5>
+              <div className="d-flex mt-4">
+                <button className="button-primary">View All Projects</button>
+                <button className="button-secondary">Learn More</button>
+              </div>
+            </div>
+            <div className="wrap-img">
+              <img src={heroImage} />
             </div>
           </div>
         </div>
@@ -380,17 +386,9 @@ class Homepage extends Component {
             </div>
             <div class="heading">Round 1</div>
             <div className="carousel">
-              <div className="next"></div>
-              <div className="prev"></div>
               <div class="container">
-                {/* <input type="radio" name="slider" id="item-1" checked />
-                <input type="radio" name="slider" id="item-2" />
-                <input type="radio" name="slider" id="item-3" />
-                <input type="radio" name="slider" id="item-4" />
-                <input type="radio" name="slider" id="item-5" />
-                <input type="radio" name="slider" id="item-6" /> */}
                 <ul class="cards">
-                  <li class="card" for="item-1" id="tier-1">
+                  <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
                         <span>Bronze</span>
@@ -426,7 +424,7 @@ class Homepage extends Component {
                       <button className="time-limit">Learn More</button>
                     </div>
                   </li>
-                  <li class="card" for="item-2" id="tier-2">
+                  <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
                         <span>Silver</span>
@@ -462,7 +460,7 @@ class Homepage extends Component {
                       <button className="time-limit">Learn More</button>
                     </div>
                   </li>
-                  <li class="card" for="item-3" id="tier-3">
+                  <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
                         <span>Gold</span>
@@ -496,7 +494,7 @@ class Homepage extends Component {
                       <button className="time-limit">Learn More</button>
                     </div>
                   </li>
-                  <li class="card" for="item-4" id="tier-4">
+                  <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
                         <span>Platinum</span>
@@ -530,7 +528,7 @@ class Homepage extends Component {
                       <button className="time-limit">Learn More</button>
                     </div>
                   </li>
-                  <li class="card" for="item-5" id="tier-5">
+                  <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
                         <span>Diamond</span>
@@ -551,7 +549,7 @@ class Homepage extends Component {
                           </li>
                           <li>
                             <small>Pool Weight</small>
-                            <span>Separate VIP discounted pool</span>
+                            <span>Separate VIP discounted</span>
                           </li>
                         </ul>
                       </div>
@@ -585,7 +583,7 @@ class Homepage extends Component {
                           </li>
                           <li>
                             <small>Pool Weight</small>
-                            <span>Separate bonus pool</span>
+                            <span>Separate bonus</span>
                           </li>
                         </ul>
                       </div>
