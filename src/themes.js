@@ -1,19 +1,22 @@
 import { createGlobalStyle } from "styled-components"
 
 export const lightTheme = {
-  bodyBg: "#f9f9f9",
+  bodyBg: "#ffffff",
   bodyColor: "#010415",
-  headerBorderBtm: "#f2f2f2",
-  navBg: "#f9f9f9",
+  headerBorderBtm: "#e8e8e8",
+  navBg: "#ffffff",
   navBoxShadow: "0px 1px 10px 0px rgba(255, 255, 255, 0.5);",
   navAColor: "#010415",
-  linknavBorderLeft: "#010415",
+  linknavBorderLeft: "#e8e8e8",
   buttonSecondaryColor: "#010415",
+  buttonSecondaryBorder: "#e8e8e8",
+  buttonSecondaryHoverBg: "#f1f1f1",
+  herosectionH5Color: "#707070;",
   blendBg: "rgba(204, 204, 204, .4)",
   singleLinkColor: "#010415",
   circleAnimationBeforeBorder: "rgba(204, 204, 204, .1)",
   footerBordertop: "#f2f2f2",
-  footerBg: "#f9f9f9",
+  footerBg: "#ffffff",
   footerBoxShadow: "0px -1px 10px 0px rgba(255, 255, 255, 0.5);",
 }
 
@@ -26,6 +29,9 @@ export const darkTheme = {
   navAColor: "#ffffff",
   linknavBorderLeft: "#262C43",
   buttonSecondaryColor: "#ffffff",
+  buttonSecondaryBorder: "#262C43",
+  buttonSecondaryHoverBg: "#262C43",
+  herosectionH5Color: "#262c43;",
   blendBg: "rgba(38, 44, 67, 0.4)",
   singleLinkColor: "#ffffff",
   circleAnimationBeforeBorder: "rgba(255, 255, 255, 0.1)",
@@ -57,6 +63,13 @@ export const GlobalStyle = createGlobalStyle`
         } 
         .button-secondary {
           color: ${(props) => props.theme.buttonSecondaryColor};
+          border-color: ${(props) => props.theme.buttonSecondaryBorder};
+        }
+        .button-secondary:hover {
+          background-color: ${(props) => props.theme.buttonSecondaryHoverBg};
+        }
+        .hero-section h5{
+          color: ${(props) => props.theme.herosectionH5Color};
         }
         .about-us {
           background-color: ${(props) => props.theme.blendBg};

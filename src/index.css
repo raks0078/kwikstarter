@@ -75,12 +75,7 @@ button {
 }
 .button-secondary {
   background-color: transparent;
-    border-color: #262C43;
     color: #fff;
-}
-.button-secondary:hover{
-  background-color: #262C43;
-  color: #ffffff;
 }
 a{ 
   text-decoration: none;
