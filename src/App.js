@@ -2,7 +2,8 @@ import React, { useState } from "react"
 import Particles from "react-particles-js"
 import { Route, Switch } from "react-router-dom"
 import { lightTheme, darkTheme, GlobalStyle } from "./themes"
-
+import LightBg from "./images/world_map_light.png"
+import DarkBg from "./images/world_map.png"
 import Header from "./Components/Header/Header"
 import Homepage from "./pages/Homepage"
 import FeaturedPoolNext from "./pages/FeaturedPoolNext"
@@ -51,7 +52,7 @@ const App = (props) => {
               },
             }}
           /> */}
-          <div className="wrapper">
+          <div className="wrapper" style={{ backgroundImage: `url(${theme === "light" ? LightBg : DarkBg})` }}>
             <Header themeToggler={handleThemeToggle} theme={theme} />
 
             <Switch>
