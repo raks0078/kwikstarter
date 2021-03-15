@@ -62,6 +62,7 @@
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 2px;
+      color: #ffffff;
     }
     .circle-animation {
       transform: translate(0%, 0%);
@@ -117,7 +118,6 @@
           line-height: 26px;
         }
         small {
-          color: #262c43;
           line-height: 26px;
           font-style: italic;
           font-weight: bold;
@@ -154,9 +154,11 @@
       font-size: 12px;
       letter-spacing: 2px;
       top: 20px;
+      color: #ffffff;
     }
     .card {
-      border: 1px solid #262c43;
+      border-width: 1px;
+      border-style: solid;
       border-radius: 0 50px;
       padding: 30px;
       position: relative;
@@ -167,8 +169,6 @@
       margin-bottom: 5rem;
 
       .square-box {
-        background-color: #262c43;
-        color: #fff;
         padding: 7px 12px 7px 7px;
         border-radius: 999px;
         position: absolute;
@@ -184,7 +184,8 @@
         img {
           max-width: 50px;
           border-radius: 50%;
-          border: 2px solid #010415;
+          border-width: 2px;
+          border-style: solid;
           margin-right: 7px;
         }
       }
@@ -218,7 +219,6 @@
 
           li {
             margin-bottom: 10px;
-            background-color: #262c43;
             padding: 5px 5px 5px 15px;
             border-radius: 9999px;
             height: 45px;
@@ -231,7 +231,6 @@
               color: #00afff;
               min-width: 115px;
               text-align: right;
-              background-color: #010415;
               border-radius: 9999px;
               text-align: center;
               font-size: 0.875em;
@@ -241,9 +240,6 @@
               justify-content: center;
               letter-spacing: 1px;
               padding: 0 15px;
-            }
-            small{
-              color: #ffffff;
             }
           }
         }
@@ -323,24 +319,23 @@
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 2px;
+      color: #ffffff;
     }
     .flex-wrap {
       margin-top: 5rem;
     }
     .card {
-      border: 1px solid #010415;
+      border-width: 1px;
+      border-style: solid;
       border-radius: 0 50px;
       padding: 30px;
       position: relative;
-      background-color: #010415;
       width: 369px;
       margin-right: 2rem;
       min-height: 385px;
       margin-bottom: 5rem;
 
       .square-box {
-        background-color: #262c43;
-        color: #fff;
         padding: 7px;
         border-radius: 0 50px 50px 0;
         font-weight: bold;
@@ -382,15 +377,11 @@
         h3 {
           font-weight: bold;
           font-size: 35px;
-          color: #fff;
         }
         .progress {
           border-radius: 9999px;
           margin-top: 5px;
 
-          .progress-bar {
-            background-color: #fff;
-          }
         }
         .counts {
           small {
@@ -411,7 +402,6 @@
 
           li {
             margin-bottom: 10px;
-            background-color: #262c43;
             padding: 5px 5px 5px 15px;
             border-radius: 9999px;
             height: 45px;
@@ -424,7 +414,6 @@
               color: #00afff;
               min-width: 115px;
               text-align: right;
-              background-color: #010415;
               border-radius: 9999px;
               text-align: center;
               font-size: 0.875em;
@@ -434,9 +423,6 @@
               justify-content: center;
               letter-spacing: 1px;
               padding: 0 15px;
-            }
-            small{
-              color: #ffffff;
             }
           }
         }
@@ -536,7 +522,6 @@
       }
       h5 {
         text-align: center;
-        color: #262c43;
         line-height: 35px;
         margin-top: 5px;
       }
@@ -556,6 +541,7 @@
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 2px;
+      color: #ffffff;
     }
     .carousel {
       margin-top: 5rem;
@@ -587,7 +573,6 @@
         justify-content: center;
 
         .card {
-          background-color: #262c43;
           border: none;
           border-radius: 15px;
           width: 370px;
@@ -621,7 +606,6 @@
         height: 100%;
 
         .square-box {
-          background-color: #010415;
           color: #00afff;
           padding: 15px;
           border-radius: 9999px;
@@ -666,7 +650,6 @@
           h3 {
             font-weight: bold;
             font-size: 35px;
-            color: #ffffff;
           }
           .progress {
             border-radius: 9999px;
@@ -695,7 +678,6 @@
 
             li {
               margin-bottom: 10px;
-              background-color: #010415;
               padding: 5px 5px 5px 15px;
               border-radius: 9999px;
               height: 45px;
@@ -708,7 +690,6 @@
                 color: #00afff;
                 min-width: 115px;
                 text-align: right;
-                background-color: #262c43;
                 border-radius: 9999px;
                 text-align: center;
                 font-size: 12px;
@@ -718,10 +699,6 @@
                 justify-content: center;
                 letter-spacing: 1px;
                 padding: 0 15px;
-              }
-              small {
-                font-size: 12px;
-                color: #ffffff;
               }
             }
           }
@@ -759,7 +736,6 @@
           }
           span {
             color: #00afff;
-            background-color: #010415;
             border-radius: 9999px;
             text-align: center;
             font-size: 12px;
@@ -794,6 +770,10 @@
           border: none;
           position: absolute;
         bottom: -28px;
+        }
+        .time-limit:hover{
+          background-color: #008CD0;
+          border-color: #008CD0;
         }
       }
 
@@ -869,7 +849,6 @@
             padding-left: 15px;
 
             li {
-              color: #262c43;
               line-height: 26px;
               font-style: italic;
               font-weight: bold;
@@ -978,6 +957,7 @@
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 2px;
+      color: #ffffff;
     }
     .circle-animation-wrap {
       margin-right: 2rem;
