@@ -23,7 +23,7 @@ const App = (props) => {
       <GlobalStyle />
       <StyledDiv>
         <div>
-          {/* <Particles
+          <Particles
             id="particles-js"
             params={{
               particles: {
@@ -31,7 +31,7 @@ const App = (props) => {
                   value: 50,
                 },
                 color: {
-                  value: "#262C43",
+                  value: theme === "dark" ? "#262C43" : "#cccccc",
                 },
                 shape: {
                   type: "circle",
@@ -40,10 +40,10 @@ const App = (props) => {
                   value: 0.5,
                 },
                 size: {
-                  value: 4,
+                  value: 7,
                 },
                 lineLinked: {
-                  distance: 150,
+                  distance: 0,
                   color: "#262C43",
                 },
                 move: {
@@ -51,7 +51,7 @@ const App = (props) => {
                 },
               },
             }}
-          /> */}
+          />
           <div className="wrapper" style={{ backgroundImage: `url(${theme === "light" ? LightBg : DarkBg})` }}>
             <Header themeToggler={handleThemeToggle} theme={theme} />
 

@@ -42,7 +42,7 @@ class Homepage extends Component {
           <div className="about-us">
             <div className="heading">About Us</div>
             <div className="d-flex">
-              {/* <div className="circle-animation"></div> */}
+              <div className="circle-animation"></div>
               <div className="content">
                 <div>
                   <h4>WHAT IS BSCPOOL?</h4>
