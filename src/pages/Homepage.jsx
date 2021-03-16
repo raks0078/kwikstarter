@@ -12,6 +12,7 @@ import HeadsetMicIcon from "@material-ui/icons/HeadsetMic"
 import TelegramIcon from "@material-ui/icons/Telegram"
 import LanguageIcon from "@material-ui/icons/Language"
 import heroImage from "../images/bscpool-heroimg.gif"
+import medium from "../images/medium.svg"
 import { Link } from "react-router-dom"
 import "./Homepage.scss"
 class Homepage extends Component {
@@ -643,6 +644,11 @@ class Homepage extends Component {
               <div className="circle-animation-wrap">
                 <div className="circle-animation">
                   <LanguageIcon />
+                </div>
+              </div>
+              <div className="circle-animation-wrap">
+                <div className="circle-animation medium-logo">
+                  <img src={medium} />
                 </div>
               </div>
             </div>
