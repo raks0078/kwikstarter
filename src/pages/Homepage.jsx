@@ -11,6 +11,7 @@ import EmailIcon from "@material-ui/icons/Email"
 import HeadsetMicIcon from "@material-ui/icons/HeadsetMic"
 import TelegramIcon from "@material-ui/icons/Telegram"
 import LanguageIcon from "@material-ui/icons/Language"
+import banner_img from "../images/bscpool_main.jpg"
 import heroImage from "../images/bscpool-heroimg.gif"
 import medium from "../images/medium.svg"
 import { Link } from "react-router-dom"
@@ -22,7 +23,6 @@ class Homepage extends Component {
         <div className="hero-section">
           <div className="container">
             <div className="wrap-content">
-              {/* <img src={bscpoologo} className="rotate" /> */}
               <h2>
                 The BSCPOOL
                 <br />
@@ -35,7 +35,7 @@ class Homepage extends Component {
               </div>
             </div>
             <div className="wrap-img">
-              {/* <img src={heroImage} /> */}
+              <img src={banner_img} />
             </div>
           </div>
         </div>
