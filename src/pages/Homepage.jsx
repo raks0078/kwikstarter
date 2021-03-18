@@ -12,12 +12,16 @@ import HeadsetMicIcon from "@material-ui/icons/HeadsetMic"
 import TelegramIcon from "@material-ui/icons/Telegram"
 import LanguageIcon from "@material-ui/icons/Language"
 import banner_img from "../images/bscpool_main.jpg"
+import side_img from "../images/bscpool.jpg"
+import image_round from "../images/bscpool.org.jpg"
+import medium_light from "../images/medium-light.svg"
 import heroImage from "../images/bscpool-heroimg.gif"
 import medium from "../images/medium.svg"
 import { Link } from "react-router-dom"
 import "./Homepage.scss"
 class Homepage extends Component {
   render() {
+    console.log("theme====", this.props.theme)
     return (
       <div className="homepage">
         <div className="hero-section">
@@ -43,7 +47,9 @@ class Homepage extends Component {
           <div className="about-us">
             <div className="heading">About Us</div>
             <div className="d-flex">
-              <div className="circle-animation"></div>
+              <div className="circle-animation sindalll ">
+                <img src={image_round} />
+              </div>
               <div className="content">
                 <div>
                   <h4>WHAT IS BSCPOOL?</h4>
@@ -604,7 +610,9 @@ class Homepage extends Component {
                     </h5>
                   </div>
                 </div>
-                {/* <div className="circle-animation"></div> */}
+                <div className="circle-animation ">
+                  <img src={side_img} />
+                </div>
               </div>
               <div className="d-flex">
                 <div className="content-full">
@@ -648,7 +656,15 @@ class Homepage extends Component {
               </div>
               <div className="circle-animation-wrap">
                 <div className="circle-animation medium-logo">
-                  <img src={medium} />
+                  {this.props.theme === "dark" ? (
+                    <React.Fragment>
+                      <img src={medium} />
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <img src={medium_light} />
+                    </React.Fragment>
+                  )}
                 </div>
               </div>
             </div>

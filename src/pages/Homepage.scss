@@ -10,10 +10,10 @@
     .container {
       display: flex;
       padding: 0;
+      height: 100%;
 
       img {
-        height: 100px;
-        margin-bottom: 30px;
+        max-height: 100%;
       }
       h2 {
         line-height: 53px;
@@ -34,10 +34,16 @@
       }
       .wrap-img {
         width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .wrap-content {
         width: calc(100% - 500px);
         padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }
@@ -68,38 +74,47 @@
       transform: translate(0%, 0%);
       height: 500px;
       width: 500px;
-      z-index: -1;
       overflow: hidden;
+      z-index: 9999;
     }
-    .circle-animation::before {
-      position: absolute;
-      content: "";
-      border-radius: 50%;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      animation: rotatecw 15s linear infinite 0s;
-      border: 4px solid rgba(255, 255, 255, 0.1);
-      border-top-color: #00afff;
-      border-right-color: #00afff;
+
+    .sindalll {
+      animation: bounce 2s linear infinite;
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
     }
-    .circle-animation::after {
-      position: absolute;
-      content: "";
-      border: 4px solid rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      top: 40px;
-      left: 40px;
-      bottom: 40px;
-      right: 40px;
-      border-top-color: #00afff;
-      border-bottom-color: #00afff;
-      animation: rotateacw 24s linear infinite 0s;
-      border: 4px solid rgba(255, 255, 255, 0.1);
-      border-top-color: #00afff;
-      border-bottom-color: #00afff;
-    }
+
+    // .circle-animation::before {
+    //   position: absolute;
+    //   content: "";
+    //   border-radius: 50%;
+    //   top: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   right: 0;
+    //   animation: rotatecw 15s linear infinite 0s;
+    //   border: 4px solid rgba(255, 255, 255, 0.1);
+    //   border-top-color: #00afff;
+    //   border-right-color: #00afff;
+    // }
+    // .circle-animation::after {
+    //   position: absolute;
+    //   content: "";
+    //   border: 4px solid rgba(0, 0, 0, 0.1);
+    //   border-radius: 50%;
+    //   top: 40px;
+    //   left: 40px;
+    //   bottom: 40px;
+    //   right: 40px;
+    //   border-top-color: #00afff;
+    //   border-bottom-color: #00afff;
+    //   animation: rotateacw 24s linear infinite 0s;
+    //   border: 4px solid rgba(255, 255, 255, 0.1);
+    //   border-top-color: #00afff;
+    //   border-bottom-color: #00afff;
+    // }
     .content {
       width: calc(100% - 500px);
       padding-left: 50px;
@@ -381,7 +396,6 @@
         .progress {
           border-radius: 9999px;
           margin-top: 5px;
-
         }
         .counts {
           small {
@@ -470,8 +484,8 @@
         }
       }
     }
-    .card:hover, 
-    .card.active{
+    .card:hover,
+    .card.active {
       border: 1px solid #00afff;
     }
     .card:last-child {
@@ -585,7 +599,7 @@
         .card:nth-child(1),
         .card:nth-child(3),
         .card:nth-child(4),
-        .card:nth-child(6), 
+        .card:nth-child(6),
         .card:last-child {
           transform: scale(0.9);
         }
@@ -769,11 +783,11 @@
           font-style: italic;
           border: none;
           position: absolute;
-        bottom: -28px;
+          bottom: -28px;
         }
-        .time-limit:hover{
-          background-color: #008CD0;
-          border-color: #008CD0;
+        .time-limit:hover {
+          background-color: #008cd0;
+          border-color: #008cd0;
         }
       }
 
@@ -903,6 +917,15 @@
         width: 450px;
         z-index: -1;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        img {
+          max-height: 100%;
+          max-width: 100%;
+          margin-left: 55px;
+        }
       }
       .circle-animation::before {
         position: absolute;
@@ -974,8 +997,8 @@
         justify-content: center;
         cursor: pointer;
       }
-      .medium-logo{
-        img{
+      .medium-logo {
+        img {
           width: 26%;
           z-index: 1;
         }
@@ -1028,5 +1051,29 @@
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(20px);
+  }
+  30% {
+    transform: translateY(30px);
+  }
+  40% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

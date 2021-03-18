@@ -7,6 +7,7 @@ import "./Header.scss"
 import { IconButton } from "@material-ui/core"
 class Header extends Component {
   render() {
+   
     return (
       <header>
         <nav class="navbar navbar-expand-lg">

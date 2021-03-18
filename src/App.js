@@ -14,7 +14,7 @@ const StyledDiv = styled.div`
   background-color: ${(props) => props.theme.sidebarBgColor};
 `
 const App = (props) => {
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useState("light")
   const handleThemeToggle = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
   }
@@ -56,8 +56,8 @@ const App = (props) => {
             <Header themeToggler={handleThemeToggle} theme={theme} />
 
             <Switch>
-              <Route exact path="/" component={() => <Homepage />} theme={theme} />
-              <Route exact path="/featured-pool-next" component={() => <FeaturedPoolNext />} theme={theme} />
+              <Route exact path="/" component={() => <Homepage theme={theme} />} />
+              <Route exact path="/featured-pool-next" component={() => <FeaturedPoolNext theme={theme} />} />
             </Switch>
             <Footer />
           </div>
