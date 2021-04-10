@@ -431,8 +431,7 @@ out below:</h5>
                           </li>
                           <li>
                             <small>For launchpad event 
-duration</small><span></span>
-                          </li>
+duration</small></li>
                           <li>
                             <small>Pool Weight</small>
                             <span>10</span>
