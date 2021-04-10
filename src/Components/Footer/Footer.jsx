@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <footer>
         <div className="container">
-          Copyright © 2021. All Rights Reserved by BSCPool
+          Copyright © 2021. All Rights Reserved by Kwikstarter
           <ul>
             <li>
               <a href="javascript:void(0)">Privacy Policy</a>

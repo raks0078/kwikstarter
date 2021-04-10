@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import bscpoologo from "../images/bcs_pool.svg"
 import blockchain from "../images/blockchain-cuties.jpg"
 import konomi from "../images/konomi-network.jpg"
 import oddz from "../images/oddz-finance.png"
@@ -12,10 +11,8 @@ import HeadsetMicIcon from "@material-ui/icons/HeadsetMic"
 import TelegramIcon from "@material-ui/icons/Telegram"
 import LanguageIcon from "@material-ui/icons/Language"
 import banner_img from "../images/bscpool_main.jpg"
-import side_img from "../images/bscpool.jpg"
 import image_round from "../images/bscpool.org.jpg"
 import medium_light from "../images/medium-light.svg"
-import heroImage from "../images/bscpool-heroimg.gif"
 import medium from "../images/medium.svg"
 import { Link } from "react-router-dom"
 import "./Homepage.scss"
@@ -28,11 +25,17 @@ class Homepage extends Component {
           <div className="container">
             <div className="wrap-content">
               <h2>
-                The BSCPOOL
-                <br />
-                is the first decentralized IDO platform for the Binance Smart Chain Network.
+              Kwikswap Protocol crew proudly announce Kwikstarter Launchpad and Incubator on BSC V1 
+(Binance Smart Chain) , our V2 will be powered by Polkadot.
               </h2>
-              <h5>BSCPOOL will empower crypto currency projects with the ability to distribute tokens and raise liquidity.</h5>
+              <h5>Post Polkadot integration both iterations will function side by side to support BSC and DOT projects 
+respectively.<br/>
+The Kwikswap / Kwikstarter Dev team are currently working frantically coding and preparing to stand 
+up an all new feature rich launchpad to assist in nurturing Start-ups and New Projects through 
+fundraising stages all the way through to market.<br/>
+KwikStarter goal is to assist everyday retail investors and contributors the chance to get in on the 
+ground floor in projects that may otherwise be quickly snapped up by Venture Capital firms. We 
+believe that everyone has an equal right to sharing the love.</h5>
               <div className="d-flex mt-4">
                 <button className="button-primary">View All Projects</button>
                 <button className="button-secondary">Learn More</button>
@@ -52,20 +55,35 @@ class Homepage extends Component {
               </div>
               <div className="content">
                 <div>
-                  <h4>WHAT IS BSCPOOL?</h4>
-                  <h5>The BSCPool is the first decentralized IDO platform for the Binance Smart Chain Network.</h5>
-                  <small>BSCPool will empower crypto currency projects with the ability to distribute tokens and raise liquidity.</small>
+                  <h4>What can you expect from Kwikstarter?</h4>
+                  <h5>Kwikstarter is a vessel which allows for start-ups projects the ability to raise funds via LP’s. It also leverages 
+off the Kwikswap audience to keep on supporting this projects through to Market Creation. The project 
+onboarding workflow will be automated in future iterations to allow for Kwik Token holders to play an 
+important role in fielding the right projects to launch on the Kwikstarter Launchpad. We believe that this 
+unique feature is a real key difference that sets us apart from other launchpads out there in the Cryptosphere.</h5>
+                  <small>At Kwikstarter, we will offer an onboarding experience like no other for projects and assist in the nurturing 
+stages of their listing and continue to offer that support mechanism through to market creation on 
+Kwikswap.</small>
                 </div>
                 <div>
-                  <h4>WHY CHOOSE US?</h4>
-                  <h5>BSCPool has found a solution to incentivize and reward all token holders in a way that is inclusive and with a low barrier to entry.</h5>
-                  <small>
-                    The fundamental flaws of existing launchpads is that <b>acquiring enough tokens to participate in the ecosystem is prohibitive</b>, and even <b>if you do hold the tokens, you are not guaranteed an allocation spot</b>. They are based on a first come first serve basis where automated bots can fill the whitelist spots in a matter of seconds. <b>BSCPool is creating fair decentralized launches</b>.
-                  </small>
-                  <br />
-                  <small className="mt-15">
-                    The hallmark of the BSCPool is a two-round system that makes <b>every tier level guaranteed an allocation</b>. There is no luck, and no lotteries, and no bots; only fair distributed rewards for all participants.
-                  </small>
+                  <h4>What’s in it for KWIK Token holders?</h4>
+                  <h5>KWIK Token holders will not only be able to take a role in the governance of Kwikswap DEX, but also play 
+an integral part of fielding ONLY THE BEST projects onto the Kwikstarter Launchpad.</h5>
+                </div>
+              </div>
+            </div>
+            <div className="d-flex">
+              <div className="content content-full">
+                <div>
+                  <h4>How to contribute to Projects that are launching on Kwikstarter…</h4>
+                  <h5>Every Project will feature an allocation and will launch over two Sales Stages. To participate in the 
+launchpad sales stages, contributors must hold a minimum of 1000 KWIK Tokens to be whitelisted.</h5>
+                  <small>We will ensure that everyone that whitelists in the required time frame will receive a token allocation.</small>
+                </div>
+                <div>
+                  <h4>How does a punter join Kwikstarter?</h4>
+                  <h5>Firstly it is a requirement that prospective contributors hold KWIK Tokens. Another value add of holding 
+KWIK Tokens is that holders/stokers appreciate a solid 12% APY staking reward that is paid monthly.</h5>
                 </div>
               </div>
             </div>
@@ -78,17 +96,17 @@ class Homepage extends Component {
               <div className="card">
                 <div className="square-box">
                   <img src={blockchain} />
-                  Blockchain Cuties
+                  TBA
                 </div>
                 <div className="total-text">
                   <small>Total Raise</small>
-                  <h3>$440K</h3>
+                  <h3>TBA</h3>
                 </div>
                 <div className="d-flex block">
                   <ul>
                     <li>
                       <small>Min Allocation</small>
-                      <span>0</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Max Allocation</small>
@@ -96,7 +114,7 @@ class Homepage extends Component {
                     </li>
                     <li>
                       <small>Access</small>
-                      <span>Private</span>
+                      <span>TBA</span>
                     </li>
                   </ul>
                 </div>
@@ -104,23 +122,23 @@ class Homepage extends Component {
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  In 2 days
+                  TBA
                 </div>
               </div>
               <div className="card">
                 <div className="square-box">
                   <img src={konomi} />
-                  Konomi Network
+                  TBA
                 </div>
                 <div className="total-text">
                   <small>Total Raise</small>
-                  <h3>$200K</h3>
+                  <h3>TBA</h3>
                 </div>
                 <div className="d-flex block">
                   <ul>
                     <li>
                       <small>Min Allocation</small>
-                      <span>0</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Max Allocation</small>
@@ -128,7 +146,7 @@ class Homepage extends Component {
                     </li>
                     <li>
                       <small>Access</small>
-                      <span>Private</span>
+                      <span>TBA</span>
                     </li>
                   </ul>
                 </div>
@@ -136,23 +154,23 @@ class Homepage extends Component {
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  In 3 days
+                  TBA
                 </div>
               </div>
               <div className="card">
                 <div className="square-box">
                   <img src={oddz} />
-                  Oddz Finance
+                  TBA
                 </div>
                 <div className="total-text">
                   <small>Total Raise</small>
-                  <h3>$150K</h3>
+                  <h3>TBA</h3>
                 </div>
                 <div className="d-flex block">
                   <ul>
                     <li>
                       <small>Min Allocation</small>
-                      <span>0</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Max Allocation</small>
@@ -160,7 +178,7 @@ class Homepage extends Component {
                     </li>
                     <li>
                       <small>Access</small>
-                      <span>Private</span>
+                      <span>TBA</span>
                     </li>
                   </ul>
                 </div>
@@ -168,13 +186,13 @@ class Homepage extends Component {
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  In 5 days
+                  TBA
                 </div>
               </div>
               <div className="card">
                 <div className="square-box">
                   <img src={shyft} />
-                  Shyft Network
+                  TBA
                 </div>
                 <div className="total-text">
                   <small>Total Raise</small>
@@ -184,7 +202,7 @@ class Homepage extends Component {
                   <ul>
                     <li>
                       <small>Min Allocation</small>
-                      <span>0</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Max Allocation</small>
@@ -192,7 +210,7 @@ class Homepage extends Component {
                     </li>
                     <li>
                       <small>Access</small>
-                      <span>Private</span>
+                      <span>TBA</span>
                     </li>
                   </ul>
                 </div>
@@ -200,13 +218,13 @@ class Homepage extends Component {
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  In 11 days
+                  TBA
                 </div>
               </div>
               <div className="card">
                 <div className="square-box">
                   <img src={convergence} />
-                  Convergence Finance
+                  TBA
                 </div>
                 <div className="total-text">
                   <small>Total Raise</small>
@@ -216,7 +234,7 @@ class Homepage extends Component {
                   <ul>
                     <li>
                       <small>Min Allocation</small>
-                      <span>0</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Max Allocation</small>
@@ -224,7 +242,7 @@ class Homepage extends Component {
                     </li>
                     <li>
                       <small>Access</small>
-                      <span>Private</span>
+                      <span>TBA</span>
                     </li>
                   </ul>
                 </div>
@@ -232,7 +250,7 @@ class Homepage extends Component {
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  In 12 days
+                  TBA
                 </div>
               </div>
             </div>
@@ -242,17 +260,17 @@ class Homepage extends Component {
           <div className="featured-pools">
             <div className="heading">Featured Pools</div>
             <div className="d-flex flex-wrap">
-              <Link to="/featured-pool-next" className="card">
+              <Link to="#" className="card">
                 <div className="square-box">
                   <img src={chain} />
                   <span>
-                    ChainGuardians POLS
-                    <small>CGG/ETH</small>
+                  TBA
+                    <small>TBA</small>
                   </span>
                 </div>
                 <div className="total-text">
                   <small>Ratio per 1 ETH</small>
-                  <h3>14925.37 CGG</h3>
+                  <h3>TBA</h3>
                 </div>
                 <div className="total-text mt-1">
                   <small>Progress</small>
@@ -260,23 +278,23 @@ class Homepage extends Component {
                     <div class="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div className="counts d-flex justify-content-between">
-                    <small>100% (Min.51%)</small>
-                    <small>965966/966000</small>
+                    <small>TBA</small>
+                    <small>TBA</small>
                   </div>
                 </div>
                 <div className="d-flex block">
                   <ul>
                     <li>
                       <small>Participants</small>
-                      <span>332</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Maximum</small>
-                      <span>0.197 ETH</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Access</small>
-                      <span>Private</span>
+                      <span>TBA</span>
                     </li>
                   </ul>
                 </div>
@@ -284,20 +302,20 @@ class Homepage extends Component {
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  Filled
+                  TBA
                 </div>
               </Link>
-              <Link to="/featured-pool-next" className="card">
+              <Link to="#" className="card">
                 <div className="square-box">
                   <img src={chain} />
                   <span>
-                    ChainGuardians Public
-                    <small>CGG/ETH</small>
+                  TBA
+                    <small>TBA</small>
                   </span>
                 </div>
                 <div className="total-text">
                   <small>Ratio per 1 ETH</small>
-                  <h3>14925.37 CGG</h3>
+                  <h3>TBA</h3>
                 </div>
                 <div className="total-text mt-1">
                   <small>Progress</small>
@@ -305,23 +323,23 @@ class Homepage extends Component {
                     <div class="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div className="counts d-flex justify-content-between">
-                    <small>100% (Min.50%)</small>
-                    <small>833999/834000</small>
+                    <small>TBA</small>
+                    <small>TBA</small>
                   </div>
                 </div>
                 <div className="d-flex block">
                   <ul>
                     <li>
                       <small>Participants</small>
-                      <span>289</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Maximum</small>
-                      <span>0.197 ETH</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Access</small>
-                      <span>Private</span>
+                      <span>TBA</span>
                     </li>
                   </ul>
                 </div>
@@ -329,20 +347,20 @@ class Homepage extends Component {
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  Filled
+                  TBA
                 </div>
               </Link>
-              <Link to="/featured-pool-next" className="card">
+              <Link to="#" className="card">
                 <div className="square-box">
                   <img src={ethernity} />
                   <span>
-                    Ethernity POLS
-                    <small>ERN/ETH</small>
+                  TBA
+                    <small>TBA</small>
                   </span>
                 </div>
                 <div className="total-text">
                   <small>Ratio per 1 ETH</small>
-                  <h3>6024.1 ERN</h3>
+                  <h3>TBA</h3>
                 </div>
                 <div className="total-text mt-1">
                   <small>Progress</small>
@@ -350,23 +368,23 @@ class Homepage extends Component {
                     <div class="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div className="counts d-flex justify-content-between">
-                    <small>100% (Min.51%)</small>
-                    <small>545453/545454</small>
+                    <small>TBA</small>
+                    <small>TBA</small>
                   </div>
                 </div>
                 <div className="d-flex block">
                   <ul>
                     <li>
                       <small>Participants</small>
-                      <span>472</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Maximum</small>
-                      <span>0.195 ETH</span>
+                      <span>TBA</span>
                     </li>
                     <li>
                       <small>Access</small>
-                      <span>Private</span>
+                      <span>TBA</span>
                     </li>
                   </ul>
                 </div>
@@ -374,7 +392,7 @@ class Homepage extends Component {
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  Filled
+                  TBA
                 </div>
               </Link>
             </div>
@@ -389,8 +407,9 @@ class Homepage extends Component {
         <div className="container">
           <div className="tiered-system">
             <div className="main-heading">
-              <h2>BSC Pool Tier package system</h2>
-              <h5>PHASE-A (Contains 7 Tiers and staking requirement)</h5>
+              <h2>Kwikstarter Member Tiers</h2>
+              <h5>We have a series of tiered levels at Kwikstarter, each containing their own unique benefits as set 
+out below:</h5>
             </div>
             <div class="heading">Round 1</div>
             <div className="carousel">
@@ -399,101 +418,60 @@ class Homepage extends Component {
                   <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
-                        <span>Groot</span>
+                        <span>Grasshopper</span>
                       </div>
                       <div className="total-text">
-                        <small>Required BPOOL tokens</small>
-                        <h3>500</h3>
+                        <small>KWIK Staked</small>
+                        <h3>1,000</h3>
                       </div>
                       <div className="d-flex block">
                         <ul>
                           <li>
-                            <small>Duration</small>
-                            <span>5 days</span>
+                            <small>KWIK Staking Length</small>
                           </li>
                           <li>
-                            <small>Guaranteed Allocation</small>
-                            <span>Yes</span>
+                            <small>For launchpad event 
+duration</small><span></span>
                           </li>
                           <li>
                             <small>Pool Weight</small>
-                            <span>5</span>
+                            <span>10</span>
                           </li>
                         </ul>
                       </div>
                       <div className="d-flex flex-column whitelist-req">
-                        <small>Whitelist Requirement: Join telegram, channel and twitter</small>
+                        <small>Whitelist Requirement: 
+Twitter</small>
                         <div className="d-flex flex-column">
                           <div className="d-flex mb-10">
                             <span>Like</span>
                             <span>Comment</span>
                           </div>
                           <div>
-                            <span>Retweet by tagging two friends</span>
+                            <span>Retweet</span>
                           </div>
                         </div>
                       </div>
-                      <button className="time-limit">Learn More</button>
+                      <button className="time-limit">Stake Now</button>
                     </div>
                   </li>
                   <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
-                        <span>Falcon</span>
+                        <span>Falcon One</span>
                       </div>
                       <div className="total-text">
-                        <small>Required BPOOL tokens</small>
-                        <h3>1500</h3>
+                        <small>KWIK Staked</small>
+                        <h3>2,000</h3>
                       </div>
                       <div className="d-flex block">
                         <ul>
                           <li>
-                            <small>Duration</small>
-                            <span>5 days</span>
+                            <small>KWIK Staking Length</small>
                           </li>
                           <li>
-                            <small>Guaranteed Allocation</small>
-                            <span>Yes</span>
-                          </li>
-                          <li>
-                            <small>Pool Weight</small>
-                            <span>15</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="d-flex flex-column whitelist-req">
-                        <small>Whitelist Requirement: Join telegram, channel and twitter</small>
-                        <div className="d-flex flex-column">
-                          <div className="d-flex mb-10">
-                            <span>Like</span>
-                            <span>Comment</span>
-                          </div>
-                          <div>
-                            <span>Retweet by tagging two friends</span>
-                          </div>
-                        </div>
-                      </div>
-                      <button className="time-limit">Learn More</button>
-                    </div>
-                  </li>
-                  <li class="card">
-                    <div className="card-carousel">
-                      <div className="square-box">
-                        <span>Captain America</span>
-                      </div>
-                      <div className="total-text">
-                        <small>Required BPOOL tokens</small>
-                        <h3>3000</h3>
-                      </div>
-                      <div className="d-flex block">
-                        <ul>
-                          <li>
-                            <small>Duration</small>
-                            <span>5 days</span>
-                          </li>
-                          <li>
-                            <small>Guaranteed Allocation</small>
-                            <span>Yes</span>
+                            <small>For launchpad event 
+duration</small>
                           </li>
                           <li>
                             <small>Pool Weight</small>
@@ -502,34 +480,38 @@ class Homepage extends Component {
                         </ul>
                       </div>
                       <div className="d-flex flex-column whitelist-req">
-                        <small>Whitelist Requirement</small>
+                        <small>Whitelist Requirement: 
+Twitter</small>
                         <div className="d-flex flex-column">
                           <div className="d-flex mb-10">
-                            <span>None</span>
+                            <span>Like</span>
+                            <span>Comment</span>
+                          </div>
+                          <div>
+                            <span>Retweet</span>
                           </div>
                         </div>
                       </div>
-                      <button className="time-limit">Learn More</button>
+                      <button className="time-limit">Stake Now</button>
                     </div>
                   </li>
                   <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
-                        <span>Iron Man</span>
+                        <span>Dragon</span>
                       </div>
                       <div className="total-text">
-                        <small>Required BPOOL tokens</small>
-                        <h3>6000</h3>
+                        <small>KWIK Staked</small>
+                        <h3>5,000</h3>
                       </div>
                       <div className="d-flex block">
                         <ul>
                           <li>
-                            <small>Duration</small>
-                            <span>5 days</span>
+                            <small>KWIK Staking Length</small>
                           </li>
                           <li>
-                            <small>Guaranteed Allocation</small>
-                            <span>Yes</span>
+                            <small>For launchpad event 
+duration</small>
                           </li>
                           <li>
                             <small>Pool Weight</small>
@@ -541,35 +523,34 @@ class Homepage extends Component {
                         <small>Whitelist Requirement</small>
                         <div className="d-flex flex-column">
                           <div className="d-flex mb-10">
-                            <span>None</span>
+                            <span>No Required</span>
                           </div>
                         </div>
                       </div>
-                      <button className="time-limit">Learn More</button>
+                      <button className="time-limit">Stake Now</button>
                     </div>
                   </li>
                   <li class="card">
                     <div className="card-carousel">
                       <div className="square-box">
-                        <span>Captain Marvel</span>
+                        <span>Falcon Heavy</span>
                       </div>
                       <div className="total-text">
-                        <small>Required BPOOL tokens</small>
-                        <h3>12000</h3>
+                        <small>KWIK Staked</small>
+                        <h3>10,000</h3>
                       </div>
                       <div className="d-flex block">
                         <ul>
                           <li>
-                            <small>Duration</small>
-                            <span>10 days</span>
+                            <small>KWIK Staking Length</small>
                           </li>
                           <li>
-                            <small>Guaranteed Allocation</small>
-                            <span>Yes</span>
+                            <small>For launchpad event 
+duration</small>
                           </li>
                           <li>
                             <small>Pool Weight</small>
-                            <span>120</span>
+                            <span>130</span>
                           </li>
                         </ul>
                       </div>
@@ -577,55 +558,86 @@ class Homepage extends Component {
                         <small>Whitelist Requirement</small>
                         <div className="d-flex flex-column">
                           <div className="d-flex mb-10">
-                            <span>None</span>
+                            <span>No Required</span>
                           </div>
                         </div>
                       </div>
-                      <button className="time-limit">Learn More</button>
+                      <button className="time-limit">Stake Now</button>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div className="card-carousel">
+                      <div className="square-box">
+                        <span>Starship</span>
+                      </div>
+                      <div className="total-text">
+                        <small>KWIK Staked</small>
+                        <h3>20,000</h3>
+                      </div>
+                      <div className="d-flex block">
+                        <ul>
+                          <li>
+                            <small>KWIK Staking Length</small>
+                          </li>
+                          <li>
+                            <small>For launchpad event 
+duration</small>
+                          </li>
+                          <li>
+                            <small>Pool Weight</small>
+                            <span>400</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex flex-column whitelist-req">
+                        <small>Whitelist Requirement</small>
+                        <div className="d-flex flex-column">
+                          <div className="d-flex mb-10">
+                            <span>No Required</span>
+                          </div>
+                        </div>
+                      </div>
+                      <button className="time-limit">Stake Now</button>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div className="card-carousel">
+                      <div className="square-box">
+                        <span>Moon Base</span>
+                      </div>
+                      <div className="total-text">
+                        <small>KWIK Staked</small>
+                        <h3>Top 10 KWIK 
+Holders</h3>
+                      </div>
+                      <div className="d-flex block">
+                        <ul>
+                          <li>
+                            <small>KWIK Staking Length</small>
+                          </li>
+                          <li>
+                            <small>For launchpad event 
+duration</small>
+                          </li>
+                          <li>
+                            <small>Pool Weight</small>
+                            <span>Additional
+Bonus LP</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="d-flex flex-column whitelist-req">
+                        <small>Whitelist Requirement</small>
+                        <div className="d-flex flex-column">
+                          <div className="d-flex mb-10">
+                            <span>No Required</span>
+                          </div>
+                        </div>
+                      </div>
+                      <button className="time-limit">Stake Now</button>
                     </div>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="heading">Round 2</div>
-            <div className="round-two">
-              <div className="d-flex">
-                <div className="content">
-                  <div>
-                    <h4>WHAT WILL HAPPEN TO THE UNSOLD TOKENS?</h4>
-                    <h5>
-                      Not every individual will fulfill their full allocation. Users will have 23 hours to claim their <b>Round 1</b> allocation, after which the tiered system will transition to the <b>Round 2</b> FCFS (first come, first serve) model. All the unsold tokens are moved into another contract where users can purchase additional allocation from the outstanding supply up to a new maximum. Users will gain access to the FCFS round based on their tier:
-                    </h5>
-                    <ul>
-                      <li>Platinum can claim the new allocation immediately</li>
-                      <li>Gold can claim the new allocation after 15 minutes</li>
-                      <li>Silver can claim the new allocation after 30 minutes</li>
-                      <li>Bronze can claim the new allocation after 45 minutes</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4>ARE THERE ANY OTHER BENEFITS TO HOLDING THE $BSCPOOL TOKEN?</h4>
-                    <h5>
-                      Absolutely. In fact, for every launch that is featured on our platform a <b>percentage of the total supply</b> will be airdropped to $BSCPOOL holders.
-                    </h5>
-                  </div>
-                </div>
-                <div className="circle-animation ">
-                  <img src={side_img} />
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="content-full">
-                  <div>
-                    <h4>$BSCPOOL COMMITTEE FOR PLATINUM MEMBERS</h4>
-                    <h5>Achieving platinum status will not only allow investors the highest allocation for pre-sale opportunities, but also additional benefits. For this elite tier, a governance committee will be created where users can help source projects, vet projects coming into the launchpad, and finally vote on upcoming changes to $BSCPOOL.</h5>
-                  </div>
-                  <div>
-                    <h4>WE WILL BE COLLECTING BOTH DATA AND FEEDBACK ON THE IDO STRUCTURE IN ORDER TO OPTIMIZE THE SYSTEM OVER TIME AS WELL AS TAKING INTO CONSIDERATION COMMUNITY FEEDBACK AND POTENTIAL DAO PROPOSALS.</h4>
-                    <h5>Our system is a predictable and provably fair system giving our users the proper incentives to accumulate and hold tokens and support each and every project launched. Over time, we will tweak weights, add new tiers and change other parameters as necessary to keep the system functional, competitive and rewarding for all community members.</h5>
-                    <small>$BSCPOOL is the next evolution of blockchain launchpads solving the fundamental flaws that plague existing launchpads. This platform benefits all holders of the token and allows for fair launches giving traders of all sizes the opportunity to invest in the best upcoming Binance Smart Chain projects.</small>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

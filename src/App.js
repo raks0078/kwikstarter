@@ -9,6 +9,7 @@ import Homepage from "./pages/Homepage"
 import FeaturedPoolNext from "./pages/FeaturedPoolNext"
 import styled, { ThemeProvider } from "styled-components"
 import Footer from "./Components/Footer/Footer"
+import Litepaper from "./pages/LitePaper"
 const StyledDiv = styled.div`
   color: ${(props) => props.theme.fontColor};
   background-color: ${(props) => props.theme.sidebarBgColor};
@@ -23,7 +24,7 @@ const App = (props) => {
       <GlobalStyle />
       <StyledDiv>
         <div>
-          <Particles
+          {/* <Particles
             id="particles-js"
             params={{
               particles: {
@@ -51,13 +52,14 @@ const App = (props) => {
                 },
               },
             }}
-          />
+          /> */}
           <div className="wrapper" style={{ backgroundImage: `url(${theme === "light" ? LightBg : DarkBg})` }}>
             <Header themeToggler={handleThemeToggle} theme={theme} />
 
             <Switch>
               <Route exact path="/" component={() => <Homepage theme={theme} />} />
-              <Route exact path="/featured-pool-next" component={() => <FeaturedPoolNext theme={theme} />} />
+              {/* <Route exact path="/featured-pool-next" component={() => <FeaturedPoolNext theme={theme} />} /> */}
+              <Route exact path="/litepaper" component={() => <Litepaper theme={theme} />} />
             </Switch>
             <Footer />
           </div>

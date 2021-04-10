@@ -1,10 +1,9 @@
 import React, { Component } from "react"
-import bscpoologo from "../../images/bcs_pool.svg"
 import LockIcon from "@material-ui/icons/Lock"
 import WhatshotIcon from "@material-ui/icons/Whatshot"
 import WbIncandescentIcon from "@material-ui/icons/WbIncandescent"
 import "./Header.scss"
-import { IconButton } from "@material-ui/core"
+import { Link, NavLink } from "react-router-dom"
 class Header extends Component {
   render() {
    
@@ -13,8 +12,7 @@ class Header extends Component {
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src={bscpoologo} className="rotate" />
-              BSCPOOL
+              Kwikstarter
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -28,7 +26,7 @@ class Header extends Component {
                   <a href="javascript:void(0)">Voting</a>
                 </li>
                 <li class="nav-item">
-                  <a href="javascript:void(0)">Litepaper</a>
+                  <NavLink to="/litepaper">Litepaper</NavLink>
                 </li>
               </ul>
               <ul class="navbar-nav">

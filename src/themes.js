@@ -178,7 +178,8 @@ export const GlobalStyle = createGlobalStyle`
         .tiered-system .main-heading h5{
           color: ${(props) => props.theme.tieredHeadingH5Color};
         }
-        .tiered-system .carousel .cards .card{
+        .tiered-system .carousel .cards .card, 
+        .litepaper .cards .card{
           background-color: ${(props) => props.theme.tieredCardBg};
         }
         .tiered-system .carousel .card-carousel .square-box{

@@ -69,7 +69,8 @@ header{
                     transition: transform 0.15s, opacity 0.15s;
                     transition: transform 0.15s, opacity 0.15s, -webkit-transform 0.15s;
                 }
-                li:hover a::after{
+                li:hover a::after, 
+                li a.active::after{
                     opacity: 1;
                     -webkit-transform: translateY(-100%);
                     transform: translateY(-100%);
