@@ -10,8 +10,8 @@ import EmailIcon from "@material-ui/icons/Email"
 import HeadsetMicIcon from "@material-ui/icons/HeadsetMic"
 import TelegramIcon from "@material-ui/icons/Telegram"
 import LanguageIcon from "@material-ui/icons/Language"
-import banner_img from "../images/bscpool_main.jpg"
-import image_round from "../images/bscpool.org.jpg"
+import banner_img from "../images/hero-section.png"
+import image_round from "../images/about-us.png"
 import medium_light from "../images/medium-light.svg"
 import medium from "../images/medium.svg"
 import { Link } from "react-router-dom"
@@ -25,10 +25,10 @@ class Homepage extends Component {
           <div className="container">
             <div className="wrap-content">
               <h2>
-              Kwikswap Protocol crew proudly announce Kwikstarter Launchpad and Incubator on BSC V1 
+              Kwikswap Protocol crew proudly announce Kwikstarter Launchpad and Incubator on Kwikstarter V1 
 (Binance Smart Chain) , our V2 will be powered by Polkadot.
               </h2>
-              <h5>Post Polkadot integration both iterations will function side by side to support BSC and DOT projects 
+              <h5>Post Polkadot integration both iterations will function side by side to support Kwikstarter and DOT projects 
 respectively.<br/>
 The Kwikswap / Kwikstarter Dev team are currently working frantically coding and preparing to stand 
 up an all new feature rich launchpad to assist in nurturing Start-ups and New Projects through 

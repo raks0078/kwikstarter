@@ -196,12 +196,12 @@ class FeaturedPoolNext extends Component {
               </div>
             </div>
             <div className="d-flex">
-              <a href="javascript:void(0)">https://bscpool.finance/RD-Audit-v2.pdf</a>
+              <a href="javascript:void(0)">https://kwikstarter.finance/RD-Audit-v2.pdf</a>
             </div>
           </div>
           <div className="disclaimer">
             <div class="heading">Disclaimer</div>
-            <p>The BSCpool team does not endorse, support or otherwise perform any due
+            <p>The Kwikstarter team does not endorse, support or otherwise perform any due
               diligence on the projects listed on its platform. As always, please DO YOUR
               OWN RESEARCH before investing any of your hard-earned BNB into these projects
               and never invest more than you are willing to lose.
