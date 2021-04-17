@@ -1,6 +1,6 @@
 .homepage {
   .hero-section {
-    padding: 40px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -9,7 +9,6 @@
 
     .container {
       display: flex;
-      padding: 0;
       height: 100%;
 
       img {
@@ -17,7 +16,7 @@
       }
       h2 {
         line-height: 43px;
-        font-size: 26px;
+        font-size: 25px;
         font-weight: bold;
       }
       h5 {
@@ -671,6 +670,7 @@
             font-weight: bold;
             font-size: 35px;
             text-align: center;
+            line-height: 45px;
           }
           .progress {
             border-radius: 9999px;
@@ -1041,6 +1041,9 @@
       .circle-animation:hover svg {
         z-index: 1;
       }
+    }
+    .circle-animation-wrap:last-child{
+      margin-right: 0;
     }
   }
 }

@@ -76,6 +76,13 @@ header{
                     transform: translateY(-100%);
                 }
             }
+            .navbar-toggler{
+                border-radius: 9999px;
+
+                svg{
+                    width: 24px;
+                }
+            }
         }
     }
 }

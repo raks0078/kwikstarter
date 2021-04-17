@@ -1,6 +1,8 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 *, html, body{
   font-family: 'Montserrat', sans-serif !important;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -11,6 +13,7 @@ body {
   background-attachment: fixed;
     background-position: center top;
     background-size: cover;
+    position: relative;
 }
 #particles-js canvas{
   position: fixed;
@@ -63,6 +66,8 @@ button {
     line-height: 40px;
     white-space: nowrap;
     letter-spacing: 1px;
+    outline: none;
+    box-shadow: none;
 }
 .button-primary {
   background-color: #00AFFF;
@@ -87,10 +92,14 @@ a{
   position: absolute;
   top: 0;
   width: 100%;
+  overflow: hidden;
 }
 .text-light-blue{
   color: #00AFFF;
 }
 .mb-10{
   margin-bottom: 10px;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
 }
