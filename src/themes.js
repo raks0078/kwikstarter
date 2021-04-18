@@ -195,7 +195,7 @@ export const GlobalStyle = createGlobalStyle`
           background-color: ${(props) => props.theme.tieredBlockLiBg};
         }
         .tiered-system .card .block ul li span{
-          background-color: ${(props) => props.theme.tieredWhitelistSpanBg};
+          background-color: ${(props) => props.theme.tieredBlockLiSpanBg};
         }
         .tiered-system .round-two .content div ul li{
           color: ${(props) => props.theme.tieredRoundTwoLiColor};
