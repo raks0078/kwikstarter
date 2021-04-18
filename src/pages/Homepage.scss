@@ -5,7 +5,6 @@
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
-    height: calc(100vh - 75px);
 
     .container {
       display: flex;
@@ -62,7 +61,7 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      left: -46px;
+      left: -45px;
       padding: 0 25px 0 20px;
       font-weight: bold;
       text-transform: uppercase;
@@ -167,7 +166,7 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      right: -46px;
+      right: -45px;
       padding: 0 20px 0 25px;
       font-weight: bold;
       text-transform: uppercase;
@@ -183,7 +182,7 @@
       padding: 30px;
       position: relative;
       background-color: transparent;
-      width: 381px;
+      width: 377px;
       margin-right: 4rem;
       min-height: 385px;
       margin-bottom: 5rem;
@@ -333,7 +332,7 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      left: -46px;
+      left: -45px;
       padding: 0 20px 0 25px;
       font-weight: bold;
       text-transform: uppercase;
@@ -350,7 +349,7 @@
       border-radius: 0 50px;
       padding: 30px;
       position: relative;
-      width: 369px;
+      width: 365px;
       margin-right: 2rem;
       min-height: 385px;
       margin-bottom: 5rem;
@@ -554,7 +553,7 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      right: -46px;
+      right: -45px;
       padding: 0 20px 0 25px;
       font-weight: bold;
       text-transform: uppercase;
@@ -982,7 +981,7 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      left: -46px;
+      left: -45px;
       padding: 0 20px 0 25px;
       font-weight: bold;
       text-transform: uppercase;
@@ -991,7 +990,8 @@
       color: #ffffff;
     }
     .circle-animation-wrap {
-      margin-right: 2rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
       margin-top: 60px;
 
       .circle-animation {
@@ -1041,9 +1041,6 @@
       .circle-animation:hover svg {
         z-index: 1;
       }
-    }
-    .circle-animation-wrap:last-child{
-      margin-right: 0;
     }
   }
 }

@@ -233,14 +233,20 @@ export const GlobalStyle = createGlobalStyle`
           background-color: ${(props) => props.theme.blendBg};
         }
 
-        @media only screen and (max-width: 1250px){
+        @media only screen and (max-width: 1350px){
+          .homepage .upcoming-pools .card{ width: 361px; }
+          .homepage .featured-pools .card{ width: 349px; }
+        }
+
+        @media only screen and (max-width: 1300px){
           .homepage .hero-section .container h2{
             line-height: 40px;
             font-size: 21px;
           }
-          .homepage .upcoming-pools .card{ width: 342px; }
-          .homepage .featured-pools .card{ width: 333px; }
+          .homepage .upcoming-pools .card{ width: 320px; }
+          .homepage .featured-pools .card{ width: 308px; }
           .homepage .tiered-system .main-heading{ margin-bottom: 15px; }
+          .homepage .tiered-system .carousel .cards .card{ width: 362px; }
         }
 
         @media only screen and (max-width: 1170px){
@@ -248,9 +254,17 @@ export const GlobalStyle = createGlobalStyle`
             line-height: 38px;
             font-size: 19px;
           }
-          .homepage .upcoming-pools .card{ width: 319px; }
-          .homepage .featured-pools .card{ width: 307px; }
-          .homepage .tiered-system .carousel .cards .card{ width: 362px; }
+          .homepage .upcoming-pools .card{ width: 273px; }
+          .homepage .featured-pools .card{ width: 261px; }
+          .homepage .tiered-system .carousel .cards .card{ width: 316px; }
+          .homepage .upcoming-pools .card .block ul li small, 
+          .homepage .upcoming-pools .card .block ul li span, 
+          .homepage .featured-pools .card .block ul li small, 
+          .homepage .tiered-system .carousel .card-carousel .block ul li small{ font-size: 11px; }
+          .homepage .featured-pools .card .block ul li span{
+            min-width: 100px;
+            font-size: 11px;
+          }
         }
 
         @media only screen and (max-width: 1024px){
@@ -317,9 +331,14 @@ export const GlobalStyle = createGlobalStyle`
           .homepage .tiered-system .carousel .cards .card:nth-last-child(2), 
           .homepage .tiered-system .carousel .cards .card:last-child, 
           .homepage .tiered-system .carousel .cards .card:nth-last-child(3){ margin-bottom: 70px; }
+          .homepage .about-us .heading, 
+          .homepage .featured-pools .heading, 
+          .homepage .contact .heading{ left: -40px; }
+          .homepage .upcoming-pools .heading, 
+          .homepage .tiered-system .heading{ right: -40px; }
         }
 
-        @media only screen and (max-width: 805px){
+        @media only screen and (max-width: 991px){
           .navbar-nav-buttons{ flex-direction: row; }
           header nav .container .navbar-collapse{
             position: absolute;
@@ -352,7 +371,7 @@ export const GlobalStyle = createGlobalStyle`
           .homepage .about-us .content div h4{ line-height: 28px; }
           .homepage .upcoming-pools .card, 
           .homepage .featured-pools .card, 
-          .homepage .tiered-system .carousel .cards .card{ width: 44%; }
+          .homepage .tiered-system .carousel .cards .card{ width: 43%; }
           .homepage .featured-pools{ padding: 50px 15px; }
           .homepage .about-us{ padding: 50px 35px; }
           .homepage .featured-pools .card .time-limit{ right: -15px; }
@@ -362,41 +381,190 @@ export const GlobalStyle = createGlobalStyle`
             min-height: 75px;
             padding: 20px 0;
           }
-          footer .container{ flex-direction: column; }
+          footer .container{ 
+            flex-direction: column; 
+            justify-content: center;
+            text-align: center;
+          }
           footer .container ul{
             padding: 0;
             margin-top: 15px;
           }
           header nav .container .navbar-nav li:first-child button{ margin-left: 0; }
           .homepage .contact .circle-animation-wrap{ margin-top: 80px; }
+          .homepage .about-us .heading, 
+          .homepage .featured-pools .heading, 
+          .homepage .contact .heading{ left: -35px; }
+          .homepage .upcoming-pools .heading, 
+          .homepage .tiered-system .heading{ right: -35px; }
+          .homepage .tiered-system .carousel .card-carousel .time-limit{
+            width: 100%;
+            left: 0;
+          }
+          footer .container ul li:first-child{ 
+            margin-left: 0; 
+            padding-left: 0; 
+          }
         }
 
-        @media only screen and (max-width: 690px){
+        @media only screen and (max-width: 767px){
+          .homepage .upcoming-pools .card .block ul li small, 
+          .homepage .upcoming-pools .card .block ul li span, 
+          .homepage .featured-pools .card .block ul li small, 
+          .homepage .featured-pools .card .block ul li span, 
+          .homepage .tiered-system .carousel .card-carousel .block ul li small{ font-size: 12px; }
+        }
+
+        @media only screen and (max-width: 726px){
           .homepage .upcoming-pools .card, 
           .homepage .featured-pools .card, 
           .homepage .tiered-system .carousel .cards .card{ width: 100%; }
           .homepage .tiered-system .carousel .cards .card:last-child{ margin-bottom: 50px; }
+          .homepage .featured-pools .single-link{ padding: 25px 23px 0; }
+          .homepage .featured-pools .single-link span{ top: 21px; }
+          .homepage .about-us .heading, 
+          .homepage .featured-pools .heading, 
+          .homepage .contact .heading{ left: -30px; }
+          .homepage .upcoming-pools .heading, 
+          .homepage .tiered-system .heading{ right: -30px; }
         }
 
-        @media only screen and (max-width: 584px){
+        @media only screen and (max-width: 650px){
           header{
-            height: 137px;
+            height: 142px;
             padding: 15px 0 20px;
           }
           header nav, 
           header nav .container .navbar-brand{ padding: 0; }
           header nav .container{ flex-direction: column; }
-          .navbar-nav-buttons{ margin-top: 15px; }
+          .navbar-nav-buttons{ margin-top: 20px; }
           header nav .container .navbar-toggler{
             position: absolute;
             right: 25px;
             top: 4px;
           }
-          header nav .container .navbar-collapse{ top: 121px; }
+          header nav .container .navbar-collapse{ top: 126px; }
           .homepage .hero-section .container button{
             min-width: 10px;
             width: 50%;
           }
+        }
+
+        @media only screen and (max-width: 590px){
+          .homepage .contact .circle-animation-wrap .circle-animation{
+            height: 70px;
+            width: 70px;
+          }
+          .homepage .contact .circle-animation-wrap{
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+        }
+
+        @media only screen and (max-width: 500px){
+          .homepage .about-us .heading, 
+          .homepage .featured-pools .heading, 
+          .homepage .contact .heading{ left: -25px; }
+          .homepage .upcoming-pools .heading, 
+          .homepage .tiered-system .heading{ right: -25px; }
+          .homepage .contact .d-flex{
+            flex-wrap: wrap;
+            margin-top: 80px;
+          }
+          .homepage .contact .circle-animation-wrap{
+            margin-top: 0;
+            margin-bottom: 25px;
+          }
+          .homepage .contact .circle-animation-wrap:nth-child(4), 
+          .homepage .contact .circle-animation-wrap:last-child{ margin-bottom: 0; }
+        }
+
+        @media only screen and (max-width: 400px){
+          header nav .container .navbar-nav li button svg{ display: none; }
+          header nav .container .navbar-nav li button.button-round svg{ display: block; }
+          .homepage .upcoming-pools .card, 
+          .homepage .featured-pools .card, 
+          .homepage .tiered-system .carousel .cards .card{ 
+            padding: 30px 15px; 
+            position: relative;
+          }
+          .homepage .tiered-system .carousel .card-carousel{ 
+            padding: 15px 0;
+            position: initial; 
+          }
+          footer .container{ line-height: 26px; }
+          footer .container ul{ margin-top: 10px; }
+          .homepage .hero-section .container img{ max-width: 100%; }
+        }
+
+        @media only screen and (max-width: 375px){
+          .homepage .upcoming-pools .card .block ul li, 
+          .homepage .featured-pools .card .block ul li, 
+          .homepage .tiered-system .carousel .card-carousel .block ul li{
+            height: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 15px;
+            text-align: center;
+          }
+          .homepage .upcoming-pools .card .block ul li span, 
+          .homepage .featured-pools .card .block ul li span, 
+          .homepage .tiered-system .carousel .card-carousel .block ul li span{
+            height: auto;
+            min-height: 35px;
+            width: 100%;
+            margin-top: 10px;
+          }
+          .homepage .tiered-system .carousel .cards .card{ height: auto; }
+          .homepage .tiered-system .carousel .card-carousel .time-limit{ bottom: -45px; }
+        }
+
+        @media only screen and (max-width: 320px){
+          header{ height: 192px; }
+          .navbar-nav-buttons{ 
+            flex-wrap: wrap; 
+            justify-content: space-between;
+          }
+          .navbar-nav-buttons li{ width: 48%; }
+          header nav .container .navbar-nav-buttons li button{ 
+            width: 100%; 
+            margin-left: 0;
+          }
+          .navbar-nav-buttons li:last-child{ 
+            width: 100%; 
+            margin-top: 10px;
+          }
+          header nav .container .navbar-collapse{ top: 177px; }
+          .homepage .hero-section .container .wrap-content .d-flex{ flex-wrap: wrap; }
+          .homepage .hero-section .container button{ 
+            width: 100%; 
+            margin-bottom: 10px;
+            margin-left: 0;
+          }
+          .homepage .hero-section .container button:last-child{ margin-bottom: 0; }
+          .homepage .about-us .heading, 
+          .homepage .featured-pools .heading, 
+          .homepage .contact .heading{ left: -20px; }
+          .homepage .upcoming-pools .heading, 
+          .homepage .tiered-system .heading{ right: -20px; }
+        }
+
+        @media only screen and (max-width: 280px){
+          header nav .container .navbar-toggler{ padding: 5px; }
+          .homepage .tiered-system .carousel .card-carousel .square-box span{ text-align: center; }
+          .homepage .contact .circle-animation-wrap .circle-animation{
+            height: 60px;
+            width: 60px;
+          }
+          footer .container ul{ flex-direction: column; }
+          footer .container ul li{
+            margin-left: 0;
+            padding-left: 0;
+            border-left: none;
+            margin-bottom: 5px;
+          }
+          footer .container ul li:last-child{ margin-bottom: 0; }
         }
 
 `
