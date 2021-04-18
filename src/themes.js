@@ -405,6 +405,7 @@ export const GlobalStyle = createGlobalStyle`
             margin-left: 0; 
             padding-left: 0; 
           }
+          header nav .container .link-nav li a::after{ display: none; }
         }
 
         @media only screen and (max-width: 767px){
@@ -413,6 +414,8 @@ export const GlobalStyle = createGlobalStyle`
           .homepage .featured-pools .card .block ul li small, 
           .homepage .featured-pools .card .block ul li span, 
           .homepage .tiered-system .carousel .card-carousel .block ul li small{ font-size: 12px; }
+          .litepaper .cards .card{ width: 100%; }
+          .litepaper .cards .card:nth-last-child(2){ margin-bottom: 2rem; }
         }
 
         @media only screen and (max-width: 726px){
@@ -477,11 +480,11 @@ export const GlobalStyle = createGlobalStyle`
           }
           .homepage .contact .circle-animation-wrap:nth-child(4), 
           .homepage .contact .circle-animation-wrap:last-child{ margin-bottom: 0; }
+          header nav .container .navbar-nav li button svg{ display: none; }
+          header nav .container .navbar-nav li button.button-round svg{ display: block; }
         }
 
         @media only screen and (max-width: 400px){
-          header nav .container .navbar-nav li button svg{ display: none; }
-          header nav .container .navbar-nav li button.button-round svg{ display: block; }
           .homepage .upcoming-pools .card, 
           .homepage .featured-pools .card, 
           .homepage .tiered-system .carousel .cards .card{ 
@@ -565,6 +568,7 @@ export const GlobalStyle = createGlobalStyle`
             margin-bottom: 5px;
           }
           footer .container ul li:last-child{ margin-bottom: 0; }
+          .litepaper .cards .card b{ line-height: 26px; }
         }
 
 `
