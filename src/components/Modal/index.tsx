@@ -3,6 +3,11 @@ import { Modal as MaterialUiModal } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import { Close } from "@material-ui/icons";
+import styled from "styled-components";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -18,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     width: "400px",
     height: "450px",
   },
-
   modalHeader: {
     display: "flex",
     justifyContent: "space-between",
@@ -26,30 +30,45 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+import { IconButton } from "@material-ui/core";
+
+const ModalWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const ModalHeading = styled.h2`
+  color: #222;
+  font-weight: 800;
+  font-size: 16px;
+`;
+
 interface IModalProps {
   isOpen: boolean;
+  heading: string;
   close: () => void;
   children: React.ReactElement;
 }
 
-const Modal = ({ isOpen, close, children }: IModalProps) => {
+const Modal = ({ isOpen, close, heading, children }: IModalProps) => {
   const classes = useStyles();
 
   return (
-    <MaterialUiModal
-      aria-labelledby="transition-modal-title"
-      aria-describedby="transition-modal-description"
-      className={classes.modal}
-      open={isOpen}
+    <Dialog
       onClose={close}
-      closeAfterTransition
-      BackdropComponent={Backdrop}
-      BackdropProps={{
-        timeout: 500,
-      }}
+      aria-labelledby="customized-dialog-title"
+      open={isOpen}
     >
-      <Fade in={true}>{children}</Fade>
-    </MaterialUiModal>
+      <ModalWrapper>
+        <DialogTitle id="customized-dialog-title">{heading}</DialogTitle>
+        <IconButton>
+          <Close />
+        </IconButton>
+      </ModalWrapper>
+
+      <DialogContent dividers>{children}</DialogContent>
+    </Dialog>
   );
 };
 

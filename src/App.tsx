@@ -15,6 +15,8 @@ import getPartiCiplesParams from "utils/getParticlesParams";
 import Web3Modal from "./components/Web3Modal";
 import store from "./state/index";
 import { Provider } from "react-redux";
+import { Web3Provider } from "@ethersproject/providers";
+import { Web3ReactProvider } from "@web3-react/core";
 
 const StyledDiv = styled.div`
   color: ${(props) => props.theme.fontColor};
@@ -28,45 +30,53 @@ const App = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
+  const getLibrary = (library: any) => {
+    return new Web3Provider(library);
+  };
+
   const particlesParams = getPartiCiplesParams(theme);
 
   return (
     <Provider store={store}>
-      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-        <GlobalStyle />
-        <StyledDiv>
-          <Router>
-            <Particles params={particlesParams} />
-            <div
-              className="wrapper"
-              style={{
-                backgroundImage: `url(${theme === "light" ? LightBg : DarkBg})`,
-              }}
-            >
-              <Header />
+      <Web3ReactProvider getLibrary={getLibrary}>
+        <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+          <GlobalStyle />
+          <StyledDiv>
+            <Router>
+              <Particles params={particlesParams} />
+              <div
+                className="wrapper"
+                style={{
+                  backgroundImage: `url(${
+                    theme === "light" ? LightBg : DarkBg
+                  })`,
+                }}
+              >
+                <Header />
 
-              <Switch>
-                <Route exact path="/" component={() => <Homepage />} />
-                <Route
-                  exact
-                  path="/featured-pool-next"
-                  component={() => <FeaturedPoolNext />}
-                />
-                <Route
-                  exact
-                  path="/litepaper"
-                  component={() => <Litepaper />}
-                />
-                <Route exact path="/projects">
-                  <Projects />
-                </Route>
-              </Switch>
-              <Web3Modal />
-              <Footer />
-            </div>
-          </Router>
-        </StyledDiv>
-      </ThemeProvider>
+                <Switch>
+                  <Route exact path="/" component={() => <Homepage />} />
+                  <Route
+                    exact
+                    path="/featured-pool-next"
+                    component={() => <FeaturedPoolNext />}
+                  />
+                  <Route
+                    exact
+                    path="/litepaper"
+                    component={() => <Litepaper />}
+                  />
+                  <Route exact path="/projects">
+                    <Projects />
+                  </Route>
+                </Switch>
+                <Web3Modal />
+                <Footer />
+              </div>
+            </Router>
+          </StyledDiv>
+        </ThemeProvider>
+      </Web3ReactProvider>
     </Provider>
   );
 };

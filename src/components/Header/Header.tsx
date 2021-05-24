@@ -12,6 +12,8 @@ import { Link, NavLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import { useWalletModalToggle } from "../../state/app/hooks";
+import { useWeb3React } from "@web3-react/core";
+import { shortenAddress } from "utils";
 
 export default function Header() {
   // render() {
@@ -27,6 +29,8 @@ export default function Header() {
   };
 
   const openWallet = useWalletModalToggle();
+
+  const { active, account } = useWeb3React();
 
   return (
     <header>
@@ -59,8 +63,13 @@ export default function Header() {
             </li>
             <li className="nav-item">
               <button className="button-primary" onClick={openWallet}>
-                <LockIcon />
-                Connect Wallet
+                {account ? (
+                  <>{shortenAddress(account)}</>
+                ) : (
+                  <>
+                    <LockIcon /> Connect Wallet
+                  </>
+                )}
               </button>
             </li>
           </ul>

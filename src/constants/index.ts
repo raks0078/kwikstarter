@@ -29,15 +29,6 @@ export interface WalletInfo {
 export const NetworkContextName = "NETWORK";
 
 export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
-  INJECTED: {
-    connector: injected,
-    name: "Injected",
-    iconURL: INJECTED_ICON_URL,
-    description: "Injected web3 provider.",
-    href: null,
-    color: "#010101",
-    primary: true,
-  },
   METAMASK: {
     connector: injected,
     name: "MetaMask",

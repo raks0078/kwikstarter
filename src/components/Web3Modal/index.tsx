@@ -5,27 +5,12 @@ import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 import { isMobile } from "react-device-detect";
 import styled from "styled-components";
 import MetamaskIcon from "../../assests/connectors/metamask-logo.png";
-import { Close } from "@material-ui/icons";
 import { injected } from "../../connectors";
 import { SUPPORTED_WALLETS } from "../../constants";
 import usePrevious from "../../hooks/usePrevious";
 import { ApplicationModal } from "../../state/app/actions";
 import { useModalOpen, useWalletModalToggle } from "../../state/app/hooks";
-
 import Modal from "../Modal";
-import { IconButton } from "@material-ui/core";
-
-const ModalWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const ModalHeading = styled.h2`
-  color: #222;
-  font-weight: 800;
-  font-size: 16px;
-`;
 
 const ModalContent = styled.div`
   padding: 1rem;
@@ -34,15 +19,16 @@ const ModalContent = styled.div`
 const Provider = styled.button`
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   margin-bottom: 20px;
-  border: 0px;
+  border-radius: 10px;
+  padding: 1.5rem;
 `;
 
 const ConnectorLogo = styled.img`
   width: 25px;
   margin-right: 10px;
+  border-radius: 5px;
 `;
 
 const ConnectorName = styled.h5`
@@ -112,34 +98,8 @@ export default function WalletModal() {
     connectorPrevious,
   ]);
 
-  const tryActivation = async (connector: AbstractConnector | undefined) => {
-    let name = "";
-    Object.keys(SUPPORTED_WALLETS).map((key) => {
-      if (connector === SUPPORTED_WALLETS[key].connector) {
-        return (name = SUPPORTED_WALLETS[key].name);
-      }
-      return true;
-    });
-
-    setPendingWallet(connector); // set wallet for pending view
-    setWalletView(WALLET_VIEWS.PENDING);
-
-    // if the connector is walletconnect and the user has already tried to connect, manually reset the connector
-    if (
-      connector instanceof WalletConnectConnector &&
-      connector.walletConnectProvider?.wc?.uri
-    ) {
-      connector.walletConnectProvider = undefined;
-    }
-
-    connector &&
-      activate(connector, undefined, true).catch((error) => {
-        if (error instanceof UnsupportedChainIdError) {
-          activate(connector); // a little janky...can't use setError because the connector isn't set
-        } else {
-          setPendingError(true);
-        }
-      });
+  const tryActivation = async (connector: any) => {
+    activate(connector);
   };
 
   // get wallets user can switch too, depending on device/browser
@@ -160,19 +120,17 @@ export default function WalletModal() {
   function getModalContent() {
     return (
       <Fragment>
-        <ModalWrapper>
-          <ModalHeading>Wallet Connection</ModalHeading>
-          <IconButton>
-            <Close />
-          </IconButton>
-        </ModalWrapper>
         <ModalContent>{getOptions()}</ModalContent>
       </Fragment>
     );
   }
 
   return (
-    <Modal isOpen={walletModalOpen} close={toggleWalletModal}>
+    <Modal
+      isOpen={walletModalOpen}
+      heading="Connect to a Wallet"
+      close={toggleWalletModal}
+    >
       <>{getModalContent()}</>
     </Modal>
   );
